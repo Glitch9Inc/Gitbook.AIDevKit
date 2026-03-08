@@ -131,12 +131,16 @@
 
 ## Components
 
-* [Components](5_components/components/README.md)
-  * [Image Generator](5_components/components/image-generator.md)
-  * [Speech Generator](5_components/components/speech-generator.md)
-  * [Speech Transcriber](5_components/components/speech-transcriber.md)
-  * [Voice Changer](5_components/components/voice-changer.md)
-  * [Content Moderator](5_components/components/content-moderator.md)
+* [Agent Components](5_components/agent-components/README.md)
+  * [Agent Behaviour](5_components/agent-behaviour.md)
+  * [Tool Managers](5_components/tool-managers.md)
+  * [Tool Call Managers](5_components/tool-call-managers.md)
+* [Generator Components](5_components/generator-components/README.md)
+  * [Image Generator](5_components/generator-components/image-generator.md)
+  * [Speech Generator](5_components/generator-components/speech-generator.md)
+  * [Speech Transcriber](5_components/generator-components/speech-transcriber.md)
+  * [Voice Changer](5_components/generator-components/voice-changer.md)
+  * [Content Moderator](5_components/generator-components/content-moderator.md)
 
 ## Unity Editor Playgrounds
 
