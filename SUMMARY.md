@@ -72,6 +72,8 @@
 * [Video Generation](3_requests/video/README.md)
   * [Text to Video](3_requests/video/text-to-video.md)
   * [Image to Video](3_requests/video/image-to-video.md)
+* [Music Generation](3_requests/music/README.md)
+  * [Text to Music](3_requests/music/text-to-music.md)
 * [Embedding](3_requests/embedding/README.md)
   * [Text Embedding](3_requests/embedding/text-embedding.md)
   * [Batch Embedding](3_requests/embedding/batch-embedding.md)

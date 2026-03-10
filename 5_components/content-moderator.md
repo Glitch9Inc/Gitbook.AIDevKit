@@ -1,5 +1,0 @@
----
-icon: shield
----
-
-# Content Moderator
