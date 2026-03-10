@@ -345,7 +345,7 @@ Create your own storage backend by implementing `IConversationStore`.
 ### Example: Cloud Storage
 
 ```csharp
-using Glitch9.AIDevKit.Conversations;
+using Glitch9.AIDevKit.Agents.Conversations;
 using Cysharp.Threading.Tasks;
 using System.Threading;
 

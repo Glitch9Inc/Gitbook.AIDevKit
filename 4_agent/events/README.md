@@ -58,7 +58,7 @@ General agent metadata:
 
 ```csharp
 using Glitch9.AIDevKit.Agents;
-using Glitch9.AIDevKit.Conversations;
+using Glitch9.AIDevKit.Agents.Conversations;
 
 Agent agent = new Agent(config, settings);
 

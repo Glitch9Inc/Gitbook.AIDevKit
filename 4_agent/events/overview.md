@@ -212,7 +212,7 @@ General agent metadata:
 
 ```csharp
 using Glitch9.AIDevKit.Agents;
-using Glitch9.AIDevKit.Conversations;
+using Glitch9.AIDevKit.Agents.Conversations;
 using Glitch9.IO;
 using System;
 using System.Collections.Generic;
