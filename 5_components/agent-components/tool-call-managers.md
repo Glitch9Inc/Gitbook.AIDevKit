@@ -6,7 +6,7 @@ icon: terminal
 
 Tool Call Managers execute **local code** in response to AI-dispatched tool calls. The AI sends a structured call; the manager runs the corresponding logic and returns the result back to the agent.
 
-All Tool Call Managers are discovered automatically by [Agent Behaviour](../agent-behaviour.md) via `GetComponentsInChildren` — no registration needed.
+All Tool Call Managers are discovered automatically by [Agent Behaviour](agent-behaviour.md) via `GetComponentsInChildren` — no registration needed.
 
 ```csharp
 public abstract class ToolCallManagerBase<TCall, TOutput> : MonoBehaviour
