@@ -1,58 +1,79 @@
+---
+description: Why API keys are vulnerable in client-side applications, and how SecureToken is your first line of defense
+icon: triangle-exclamation
+---
+
 # Client-Side Keys
 
-## Why Storing API Keys on the Client Is Risky
+## The Core Problem
 
-When you ship an application — whether it's a Unity game, a mobile app, or a desktop tool — all files bundled with it are, in principle, accessible to the user running it. This includes ScriptableObjects, configuration files, and even compiled bytecode.
+When you ship a Unity application, every file bundled with it is physically on the player's machine — ScriptableObjects, compiled bytecode, serialized assets, all of it. **Anyone who has your app can inspect it.**
 
-**Anyone who has your app can also have your key.** Here is why that matters:
+This creates an inherent tension: AIDevKit needs your API key to call AI providers at runtime, but storing that key anywhere in the client makes it technically accessible to an attacker. There is no way to completely eliminate this tension without moving the key off the client entirely — which is not always practical for the kinds of tools AIDevKit is designed for.
 
-| Threat | What an attacker can do |
-|---|---|
-| **Strings extraction** | Run `strings yourgame.exe` or open the APK/IPA to search for patterns like `sk-...`, `AIza...`, or `Bearer ...` |
-| **IL decompilation** | Unity IL2CPP or Mono builds can be partially reversed with tools (Il2CppDumper, dnSpy) to recover constants embedded in source code |
-| **Memory scanning** | At runtime, tools like Cheat Engine or `frida` can dump process memory and grep for known API-key patterns |
-| **Asset file inspection** | Unity serialized assets (`.asset`, `.json`, `.bytes`) are trivially readable with any hex editor |
-
-Once your key is extracted, the attacker can call the same API on your behalf — charged to **your** account.
+The realistic goal, then, is not perfect security but **raising the cost of extraction** high enough that casual and automated attacks fail.
 
 ---
 
-## When You Have No Choice
+## How Attackers Extract Client-Side Keys
 
-The ideal solution is always a **server-side proxy**: your client calls your own backend, and the backend holds the key and forwards requests to the AI provider. The key never leaves your server.
+Understanding the attack surface helps you understand why plain-text storage is so dangerous:
 
-However, there are legitimate situations where this architecture is not feasible:
+| Attack method | What an attacker does |
+|---|---|
+| **Strings extraction** | Runs `strings yourgame.exe` or greps the APK/IPA for patterns like `sk-...` or `AIza...` — takes seconds |
+| **Asset file inspection** | Opens `.asset`, `.json`, or `.bytes` files with a hex editor — Unity serialized assets are human-readable |
+| **IL decompilation** | Uses Il2CppDumper or dnSpy to recover string constants embedded in compiled code |
+| **Memory scanning** | Uses Cheat Engine or `frida` to dump process memory at runtime and search for key patterns |
 
-* You are shipping an **offline** or **LAN-only** tool (no server available)
-* You are building an **editor plugin** used only by developers on trusted machines
-* Your project is a **prototype or internal tool** not intended for wide distribution
-* Server infrastructure is beyond the current project budget/scope
+If your key is stored as a plain string constant anywhere — in source code, in a ScriptableObject, in `PlayerPrefs` — any of the above methods will expose it in minutes.
 
-In these cases, you cannot eliminate the risk — but you can reduce the cost of a potential breach:
+---
 
-### Limit Key Permissions
+## SecureToken: AIDevKit's First Line of Defense
 
-Most AI providers (OpenAI, Google, Anthropic, etc.) allow you to create keys with **restricted scopes** — for example, a key that can only call the Chat Completions endpoint and nothing else. A stolen restricted key causes far less damage than a stolen full-access key.
+Rather than storing the raw key, AIDevKit uses `SecureToken` to obfuscate it through a multi-step pipeline before anything is written to disk:
 
-### Set Strict Usage Limits
+1. **XOR cipher** — the key is XOR'd against a secret mask, producing unreadable binary data
+2. **Hex encoding** — the binary data is converted to a printable hex string
+3. **Split storage** — the hex string is cut in half and saved as two separate serialized fields (`ambientFactor` and `reflectionIndex`)
 
-Set **monthly spending caps** and **per-request rate limits** on your API key dashboard. Even if a key is stolen, the attacker cannot generate significant cost beyond your set ceiling.
+The result is that no single field in your ScriptableObject contains a recognizable key. Plain-text grep finds nothing. A hex editor shows meaningless fragments. The mask itself is never stored as a complete literal in the source — it is assembled from two separate compile-time constants at runtime.
 
-### Use Short-Lived or Rotating Keys
+This approach directly defeats the two most common attacks — strings extraction and asset inspection — because neither produces anything that looks like an API key.
 
-Some providers offer token-based authentication with expiry. Where possible, prefer a key with a short lifespan and rotate it regularly. Pair this with automated alerts for anomalous usage.
+For a complete technical breakdown of how the encryption pipeline works and where its limits are, see [How AIDevKit Protects Your Keys](how-aidevkit-protects-your-keys.md).
 
-### Avoid Hard-Coding the Key as a Plain String
+---
 
-Never do this:
+## What SecureToken Does Not Protect Against
 
-```csharp
-// ❌ BAD — visible in any decompiler and every asset file
-private const string ApiKey = "sk-abc123...";
-```
+`SecureToken` is an obfuscation layer, not an impenetrable vault. A patient, skilled attacker can still:
 
-Instead, use AIDevKit's `SecureToken` system (see [How AIDevKit Protects Your Keys](how-aidevkit-protects-your-keys.md)) to at least prevent trivial extraction via plain-text search.
+* **Reverse-engineer the binary** to recover both mask constants and reconstruct the XOR key
+* **Scan memory at runtime** during the brief window when the key is decrypted and passed to the HTTP request
+* **Patch the binary** to intercept the decrypted value before it leaves the process
 
-### Do Not Ship Developer Keys to End Users
+This means `SecureToken` is effective against passive, automated, and casual attacks — but not against a determined, targeted reverse-engineer.
 
-If your tool targets other developers (e.g., an editor extension, a Unity asset), instruct users to **supply their own API key** rather than bundling yours. Each user is then responsible for their own key's security.
+---
+
+## Reducing Risk Beyond SecureToken
+
+When the key must live in the client, layer these controls on top of `SecureToken`:
+
+### Restrict Key Permissions
+
+Most providers let you create keys scoped to specific endpoints. A key that can only call Chat Completions cannot be used to generate images, manage fine-tunes, or drain your storage. Issue the narrowest permission set your app actually requires.
+
+### Set Hard Spending Caps
+
+Configure a monthly budget ceiling on your provider dashboard. Even a fully compromised key cannot cost more than your cap — accidental or malicious overuse stops at the limit.
+
+### Never Ship Your Own Key to End Users
+
+If you are building a tool that other developers use (an editor extension, a Unity asset), require users to enter their own API key rather than bundling yours. Each developer is then responsible for their own key's security, and a breach of one installation does not affect others.
+
+### Keep Keys Out of Version Control
+
+Add your API key asset files to `.gitignore`. A key committed to any repository — especially a public one — is typically extracted and abused within minutes by automated scanning bots.

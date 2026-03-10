@@ -1,3 +1,8 @@
+---
+description: A deep dive into SecureToken — the XOR-based obfuscation system that keeps your keys out of plain sight
+icon: lock
+---
+
 # How AIDevKit Protects Your Keys
 
 AIDevKit stores API keys through the `SecureToken` class, which applies a multi-step obfuscation scheme before writing anything to disk. This page explains exactly how that scheme works and where its limits are, so you can make an informed decision about your threat model.

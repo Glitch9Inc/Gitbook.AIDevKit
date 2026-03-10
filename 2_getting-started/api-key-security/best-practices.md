@@ -1,3 +1,8 @@
+---
+description: Actionable steps to minimize the risk of API key exposure in your project
+icon: list-check
+---
+
 # Best Practices
 
 The following recommendations are ranked roughly from highest to lowest impact. Apply as many as your project allows.

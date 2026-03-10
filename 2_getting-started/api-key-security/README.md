@@ -1,3 +1,8 @@
+---
+description: Understand the risks of client-side API keys and how AIDevKit helps protect them
+icon: shield
+---
+
 # API Key Security
 
 API keys are the credentials that authenticate your requests to AI providers. Keeping them safe is critical — a leaked key means unauthorized actors can make API calls billed to your account, potentially racking up large charges or exhausting your quota.
