@@ -1,12 +1,82 @@
 ---
-icon: book-open
+description: What an Agent is and how the system is structured
+icon: robot
 ---
 
 # Agent Overview
 
-Understand AI Dev Kit's agent system architecture and capabilities.
+The **Agent** is the core building block of AIDevKit. It connects your Unity project to any supported AI provider, manages the full conversation lifecycle, and handles everything from streaming responses to tool calls.
 
-## Getting Started
+---
+
+## What Is an Agent?
+
+Think of an Agent as an AI character or assistant living in your Unity scene. You give it:
+
+* **Instructions** — how it should behave and what role it plays
+* **A model** — which AI (GPT-4o, Gemini, Claude, etc.) powers it
+* **Tools** *(optional)* — functions it can invoke to interact with your game world
+* **Conversation memory** *(optional)* — how much context it remembers
+
+The Agent handles everything else: making API calls, streaming tokens, executing tool calls, persisting conversation history, and dispatching Unity events your UI can react to.
+
+---
+
+## Before v4: Multiple Agent Types
+
+In earlier versions of AIDevKit, you had to choose between several specialized classes:
+
+```
+[Old Design - Deprecated]
+ChatAgent        → text chat only
+VoiceAgent       → voice input / output
+AssistantsAgent  → OpenAI Assistants API
+```
+
+Switching from text chat to voice meant replacing your entire Agent class, and sharing logic between types was awkward.
+
+---
+
+## v4+: One Agent Class
+
+Starting with v4, all of those types are merged into a **single `Agent` class**. Behavior is driven by configuration, not inheritance:
+
+```
+[New Design]
+Agent ─┬─ ChatCompletions API  (text chat, widest provider support)
+       ├─ Responses API        (text + tools, OpenAI stateful)
+       ├─ Assistants API       (OpenAI thread-based)
+       └─ Realtime API         (voice + WebSocket)
+```
+
+You switch modes by changing `ChatApiType` in `AgentSettings`. No code changes needed.
+
+{% hint style="info" %}
+**In Unity scenes, you don't use `Agent` directly.** You attach the `AgentBehaviour` MonoBehaviour to a GameObject. It creates and manages the `Agent` for you.
+{% endhint %}
+
+---
+
+## The Two Key Assets
+
+Every Agent in Unity is configured through two ScriptableObjects:
+
+| Asset | Purpose |
+|---|---|
+| **`AgentSettings`** | Technical config: API type, model, audio flags, conversation settings |
+| **`AgentProfile`** | Identity config: agent name, instructions, personality traits, starting message |
+
+You assign both to the `AgentBehaviour` component in the Inspector. Because they are separate assets, you can swap personalities or backends independently — and the same `AgentProfile` can be shared across multiple agents.
+
+---
+
+## What's in This Section
+
+| Page | What you'll learn |
+|---|---|
+| [How Agent Works](how-agent-works.md) | Internal architecture and the lifecycle of a message |
+| [Creating Your First Agent](creating-your-first-agent.md) | Step-by-step setup guide from scratch |
+| [Memory (RAG)](memory.md) | Conversation history, context windows, and long-term retrieval |
 
 Learn the fundamentals of working with agents:
 
