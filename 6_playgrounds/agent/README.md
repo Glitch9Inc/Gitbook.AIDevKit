@@ -2,13 +2,11 @@
 icon: message-lines
 ---
 
-# Dev Assistant (Chat)
+# Playground Agent
 
-{% embed url="https://www.youtube.com/watch?v=no6X2QNvG5A" %}
-
-Chat directly with an integrated AI-powered assistant within the Unity Editor. Ask anything from _"How do I fix this error?"_ to _"What scripts do I need for character jumping?"_ The assistant provides clear explanations, coding tips, and even edits existing scripts on command, simplifying your coding process.
+Chat with an AI-powered assistant directly inside the Unity Editor. Ask questions, get coding help, fix errors, and have it edit scripts on demand.
 
 {% hint style="info" %}
-To open **Unity Chat Assistant**, navigate to `Tools > AI Dev Kit > Dev Assistant` in the Unity Editor.&#x20;
+Open via `Tools > AI Dev Kit > Playground Agent` or press `Ctrl+Shift+E`.
 {% endhint %}
 

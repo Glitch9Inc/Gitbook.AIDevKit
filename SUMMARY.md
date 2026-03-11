@@ -151,7 +151,7 @@
 ## Unity Editor Playgrounds
 
 * [Playground Agent](6_playgrounds/agent/README.md)
-* [Asset Generators](6_playgrounds/asset-generators/README.md)
+* [Generation Hubs](6_playgrounds/generation-hubs/README.md)
 
 ## Unity Editor Tools
 
