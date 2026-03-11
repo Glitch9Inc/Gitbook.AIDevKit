@@ -148,15 +148,12 @@
   * [Voice Changer](5_components/generator-components/voice-changer.md)
   * [Content Moderator](5_components/generator-components/content-moderator.md)
 
-## Unity Editor Playgrounds
+## Unity Editor Integrations
 
 * [Playground Agent](6_playgrounds/agent/README.md)
 * [Generation Hubs](6_playgrounds/generation-hubs/README.md)
-
-## Unity Editor Tools
-
-* [Generation History](7_editor-tools/generation-history/README.md)
-* [Data Manager](7_editor-tools/data-manager/README.md)
+* [Generation History](6_editor-tools/generation-history/README.md)
+* [Data Manager](6_editor-tools/data-manager/README.md)
 
 ## Legacy Documents
 

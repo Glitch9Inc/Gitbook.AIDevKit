@@ -1,6 +1,0 @@
----
-icon: sun
----
-
-# Data Management
-
