@@ -3,7 +3,8 @@
 ## Introduction
 
 * [AI Dev Kit](README.md)
-* [Endpoint Supports](1_introduction/provider-supports/README.md)
+  * [Package Tiers & Provider Support](1_introduction/package-tiers.md)
+  * [Endpoint Supports](1_introduction/provider-supports/README.md)
 * [FAQ](1_introduction/faq.md)
 * [Troubleshooting](1_introduction/troubleshooting/README.md)
   * [AI Dev Kit does not appear in Tools menu](1_introduction/troubleshooting/ai-dev-kit-does-not-appear-in-tools-menu.md)
@@ -45,6 +46,7 @@
 * [Adding Models & Voices](2_getting-started/adding-models-and-voices/README.md)
   * [Quick Add Guide](2_getting-started/adding-models-and-voices/quick-add-guide.md)
   * [Creating Snippets](2_getting-started/adding-models-and-voices/creating-snippets.md)
+* [Current User](2_getting-started/current-user.md)
 * [Self-Hosting with Ollama](2_getting-started/self-hosting-with-ollama.md)
 
 ## Requests

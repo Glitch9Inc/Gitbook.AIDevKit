@@ -1,4 +1,4 @@
----
+﻿---
 icon: music
 ---
 
@@ -11,7 +11,7 @@ AIDevKit supports music generation through the following providers:
 | Provider | Models | Notes |
 |---|---|---|
 | **ElevenLabs** | `music_v1` | Text prompt or composition plan, optional vocals |
-| **Google Lyria** *(Pro)* | `lyria-realtime-exp` | Bidirectional streaming over WebSocket |
+| **Google Lyria** *(Agent)* | `lyria-realtime-exp` | Bidirectional streaming over WebSocket |
 
 ## Topics
 

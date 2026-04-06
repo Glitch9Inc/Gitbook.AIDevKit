@@ -1,4 +1,4 @@
-# HTTP/1.1 400 Bad Request
+﻿# HTTP/1.1 400 Bad Request
 
 ### **Issue**
 
@@ -28,6 +28,6 @@ If that works, it’s likely your original input was too complex or invalid.
 {% hint style="info" %}
 If the issue persists even with the latest version, consider joining [Discord](https://discord.gg/hgajxPpJYf) — where I provide **preview builds**, **hotfixes**, and direct support.&#x20;
 
-🔒 **Gain** **Access to the PRO preview builds channel.**\
+🔒 **Gain** **Access to the Agent preview builds channel.**\
 To gain access, please send me your **proof of purchase** (e.g. invoice or order number).
 {% endhint %}

@@ -1,4 +1,4 @@
-# Getting Complier Errors after AI Dev Kit update
+﻿# Getting Complier Errors after AI Dev Kit update
 
 ### **Issue**
 
@@ -29,6 +29,6 @@ Confirm that you’re importing the most recent release of **AI Dev Kit**. Versi
 {% hint style="info" %}
 If the issue persists even with the latest version, consider joining [Discord](https://discord.gg/hgajxPpJYf) — where I provide **preview builds**, **hotfixes**, and direct support.&#x20;
 
-🔒 **Gain** **Access to the PRO preview builds channel.**\
+🔒 **Gain** **Access to the Agent preview builds channel.**\
 To gain access, please send me your **proof of purchase** (e.g. invoice or order number).
 {% endhint %}

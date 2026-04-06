@@ -1,7 +1,7 @@
-# Code Generators
+﻿# Code Generators
 
 {% hint style="info" %}
-This feature is only available in the Pro version.
+This feature is only available in the Agent version.
 {% endhint %}
 
 **AI Development Kit** introduces two powerful code generators designed to enhance productivity and creativity within the Unity environment: the C# Script Generator and the Unity Component Generator. These tools leverage advanced AI models to automate the generation of C# scripts and Unity components based on natural language prompts provided by the developer.

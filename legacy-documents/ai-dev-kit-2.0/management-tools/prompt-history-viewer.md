@@ -1,7 +1,7 @@
-# Prompt History Viewer
+﻿# Prompt History Viewer
 
 {% hint style="info" %}
-This feature is only available in the Pro version.
+This feature is only available in the Agent version.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>

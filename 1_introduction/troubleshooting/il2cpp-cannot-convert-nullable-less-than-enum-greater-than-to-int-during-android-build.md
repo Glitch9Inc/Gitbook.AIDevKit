@@ -1,4 +1,4 @@
-# \[IL2CPP] Cannot Convert 'Nullable\<Enum>' to 'int' During Android Build
+﻿# \[IL2CPP] Cannot Convert 'Nullable\<Enum>' to 'int' During Android Build
 
 ### **Issue**
 
@@ -26,6 +26,6 @@ When building for Android with IL2CPP, the following error may occur:
 {% hint style="info" %}
 If the issue persists even with the latest version, consider joining [Discord](https://discord.gg/hgajxPpJYf) — where I provide **preview builds**, **hotfixes**, and direct support.&#x20;
 
-🔒 **Gain** **Access to the PRO preview builds channel.**\
+🔒 **Gain** **Access to the Agent preview builds channel.**\
 To gain access, please send me your **proof of purchase** (e.g. invoice or order number).
 {% endhint %}

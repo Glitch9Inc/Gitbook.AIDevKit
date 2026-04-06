@@ -1,4 +1,4 @@
-# AI Dev Kit v4
+﻿# AI Dev Kit v4
 
 ### 4.8.0 (2025-11-30)
 
@@ -20,7 +20,7 @@
 
 **Added:**
 
-* DeepSeek API support (Pro package)
+* DeepSeek API support (Agent package)
 
 **Fixed:**
 
@@ -89,7 +89,7 @@
 * OpenRouter Files API support
 * New model metadata system
 * Voice metadata system
-* Research Lab tier (Pro users exclusive, preview feature)
+* Enterprise tier (Agent users exclusive, preview feature)
 
 **Implemented:**
 
@@ -336,7 +336,7 @@
 
 #### v.4.5.06 (Aug 22, 2025) – *Pre-Release*
 
-* Merged **Pro assembly** into **Core** (simpler setup)
+* Merged **Agent assembly** into **Core** (simpler setup)
 * Added **Audio Clip–based Prompt Generator** window
 * Fixed streaming chat not pushing response messages
 * Added Editor session info formatter to Anthropic chat requests
@@ -420,7 +420,7 @@
 
 #### v.4.2.10 (Jul 29, 2025) – *Preview*
 
-* Continuing Pro sample fixes
+* Continuing Agent sample fixes
 * Removed unused editor icons
 * Organized editor icons & GUI labels
 
@@ -596,7 +596,7 @@
 
 #### v.4.0.2 (Aug 22, 2025) – *Pre-Release*
 
-* Merged **Pro assembly** into **Core** to simplify setup
+* Merged **Agent assembly** into **Core** to simplify setup
 * Added **Audio Clip–based Prompt Generator** window
 * Fixed **streaming chat not pushing response messages**
 * Added **Editor session info formatter** to Anthropic chat requests

@@ -1,4 +1,4 @@
----
+﻿---
 description: >-
   If AI Dev Kit is not visible in Unity after install, please read this
   instructions
@@ -48,6 +48,6 @@ In rare cases, Unity fails to automatically apply the required **Scripting Defin
 {% hint style="info" %}
 If the issue persists even with the latest version, consider joining [Discord](https://discord.gg/hgajxPpJYf) — where I provide **preview builds**, **hotfixes**, and direct support.&#x20;
 
-🔒 **Gain** **Access to the PRO preview builds channel.**\
+🔒 **Gain** **Access to the Agent preview builds channel.**\
 To gain access, please send me your **proof of purchase** (e.g. invoice or order number).
 {% endhint %}

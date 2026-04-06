@@ -1,8 +1,8 @@
-# AI Dev Kit v3
+﻿# AI Dev Kit v3
 
 #### v.3.11.22 (Jun 26, 2025) – *Preview*
 
-* Added PixelLab API (Pro-only preview; may move to addon)
+* Added PixelLab API (Agent-only preview; may move to addon)
 * Fixed streaming LLM response issues
 * Upgraded multiple Generator UIs
 
@@ -92,7 +92,7 @@
 * Realtime API integration v2 (tested)
 * Added WebSocketEventReceiver, ToolEventReceiver, StreamingAudioEventReceiver
 * Added Realtime + Receiver icons
-* Moved `GENChat` + `ChatSession` to Pro-only
+* Moved `GENChat` + `ChatSession` to Agent-only
 * Fixed catalogue duplication issues
 * Upgraded model window UI
 * Fixed demo scenes
@@ -292,7 +292,7 @@
 * Integrated Assistants API (v3) and Realtime API (v2) – tested
 * Added WebSocketEventReceiver, ToolEventReceiver, StreamingAudioEventReceiver
 * Added new icons for Realtime + Receivers
-* Moved `GENChat`, `ChatSession` to Pro-only
+* Moved `GENChat`, `ChatSession` to Agent-only
 * Fully resolved catalogue duplication issues
 * New/Deprecated Model window UI upgrade
 * Fixed demo scenes (except Moderation)
@@ -302,7 +302,7 @@
 * Upgraded Assistants API (v3) + Realtime API (v2)
 * Added WebSocketEventReceiver, ToolEventReceiver, StreamingAudioEventReceiver
 * Added new icons for Realtime + Receivers
-* Moved `GENChat`, `ChatSession` to Pro-only
+* Moved `GENChat`, `ChatSession` to Agent-only
 * Fully resolved catalogue duplication issues
 * New Model window UI; fixed demo scenes
 
@@ -359,7 +359,7 @@
 * DebugMode for APIs + AIDevKit
 * Added STT Demo, ElevenLabs fixes
 * Multipart form fixes for ElevenLabs/Google
-* Realtime API moved to Pro-only, renamed to `RealtimeAssistant`
+* Realtime API moved to Agent-only, renamed to `RealtimeAssistant`
 * `SpeechToTextAPI` → `SpeechAssistant` (now STT/translation/voice changer)
 * `ChatAPI` → `Chatbot`
 * Added voice changer demo

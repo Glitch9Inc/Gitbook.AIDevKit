@@ -1,7 +1,7 @@
-# Editor Speech (TTS)
+﻿# Editor Speech (TTS)
 
 {% hint style="info" %}
-This feature is only available in the Pro version.
+This feature is only available in the Agent version.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt="" width="563"><figcaption></figcaption></figure>

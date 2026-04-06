@@ -1,7 +1,7 @@
-# Creating assistants API
+﻿# Creating assistants API
 
 {% hint style="info" %}
-This feature is only available in the Pro version.
+This feature is only available in the Agent version.
 {% endhint %}
 
 **Step 1: Upload a File (if necessary)**

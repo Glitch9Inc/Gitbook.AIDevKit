@@ -1,4 +1,4 @@
-# Model 'gpt-4o (or other model name)' not found
+﻿# Model 'gpt-4o (or other model name)' not found
 
 ### **Issue**
 
@@ -24,7 +24,7 @@ In the Project window, delete the entire `Assets/Glitch9` folder, then re-import
 {% hint style="info" %}
 If the issue persists even with the latest version, consider joining [Discord](https://discord.gg/hgajxPpJYf) — where I provide **preview builds**, **hotfixes**, and direct support.&#x20;
 
-🔒 **Gain** **Access to the PRO preview builds channel.**\
+🔒 **Gain** **Access to the Agent preview builds channel.**\
 To gain access, please send me your **proof of purchase** (e.g. invoice or order number).
 {% endhint %}
 

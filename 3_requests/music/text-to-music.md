@@ -1,4 +1,4 @@
----
+﻿---
 icon: waveform-lines
 ---
 
@@ -114,7 +114,7 @@ IAudioAsset music = await "".GENMusic()
 
 ## Provider Support
 
-| Feature | ElevenLabs | Google Lyria *(Pro)* |
+| Feature | ElevenLabs | Google Lyria *(Agent)* |
 |---|---|---|
 | Text prompt | ✅ | ✅ |
 | Duration control | ✅ | — |
@@ -124,7 +124,7 @@ IAudioAsset music = await "".GENMusic()
 
 {% hint style="info" %}
 Google Lyria uses a bidirectional WebSocket stream and is integrated via the `LyriaMusicPlayer`
-component. It is available in **AIDevKit Pro** only.
+component. It is available in **AIDevKit Agent** only.
 {% endhint %}
 
 ## Unity Integration Example
