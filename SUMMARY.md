@@ -139,6 +139,7 @@
     * [OAuth Providers](4_agent/tools/mcp-integration/oauth-providers.md)
 * [Components](4_agent/components/README.md)
   * [Agent Persona](4_agent/components/agent-persona.md)
+  * [Agent Profile](4_agent/components/agent-profile.md)
   * [Agent Behaviour](4_agent/components/agent-behaviour.md)
   * [Tool Managers](4_agent/components/tool-managers.md)
   * [Tool Call Managers](4_agent/components/tool-call-managers.md)
