@@ -138,13 +138,14 @@
     * [Approval Handlers](4_agent/tools/mcp-integration/approval-handlers.md)
     * [Approval Timeout](4_agent/tools/mcp-integration/approval-timeout.md)
     * [OAuth Providers](4_agent/tools/mcp-integration/oauth-providers.md)
+* [Components](4_agent/components/README.md)
+  * [Agent Behaviour](4_agent/components/agent-behaviour.md)
+  * [Tool Managers](4_agent/components/tool-managers.md)
+  * [Tool Call Managers](4_agent/components/tool-call-managers.md)
 
-## Unity Components
+## Generators
 
-* [Agent Components](5_components/agent-components/README.md)
-  * [Agent Behaviour](5_components/agent-components/agent-behaviour.md)
-  * [Tool Managers](5_components/agent-components/tool-managers.md)
-  * [Tool Call Managers](5_components/agent-components/tool-call-managers.md)
+* [Overview](5_components/README.md)
 * [Generator Components](5_components/generator-components/README.md)
   * [Image Generator](5_components/generator-components/image-generator.md)
   * [Speech Generator](5_components/generator-components/speech-generator.md)
