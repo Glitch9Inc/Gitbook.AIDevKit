@@ -110,7 +110,6 @@
 
 * [Overview](4_agent/overview/README.md)
   * [Chat API Types](4_agent/overview/chat-api-types.md)
-  * [Agent Persona](4_agent/overview/agent-persona.md)
   * [How Agent Works](4_agent/overview/how-agent-works.md)
   * [Creating Your First Agent](4_agent/overview/creating-your-first-agent.md)
   * [Memory (RAG)](4_agent/overview/memory.md)
@@ -139,6 +138,7 @@
     * [Approval Timeout](4_agent/tools/mcp-integration/approval-timeout.md)
     * [OAuth Providers](4_agent/tools/mcp-integration/oauth-providers.md)
 * [Components](4_agent/components/README.md)
+  * [Agent Persona](4_agent/components/agent-persona.md)
   * [Agent Behaviour](4_agent/components/agent-behaviour.md)
   * [Tool Managers](4_agent/components/tool-managers.md)
   * [Tool Call Managers](4_agent/components/tool-call-managers.md)
