@@ -79,15 +79,11 @@ Example: "Hello! I'm Alex, your math tutor. What would you like to learn today?"
 
 ---
 
-## Persona Types
-
-AI Dev Kit provides two persona types:
-
-### 1. Instruct Persona (Recommended)
+## Built-in Persona: Instruct Persona
 
 **Create > AI DevKit > Agent Persona (Instruct)**
 
-Best for most use cases. Provides a clean, straightforward configuration:
+The default persona type for most use cases. Provides a clean, straightforward configuration:
 - Agent Name
 - User Name
 - Description
@@ -98,21 +94,7 @@ Use this when:
 - Building conversational agents
 - Creating assistants or tutors
 - Standard chatbot applications
-
-### 2. NPC Persona (Game Characters)
-
-**Create > AI DevKit > Agent Persona (NPC)**
-
-Specialized for game characters with additional fields:
-- Character stats (health, mana, etc.)
-- Inventory and equipment
-- Relationship tracking with other NPCs
-- Quest and objective management
-
-Use this when:
-- Building RPG or adventure game characters
-- Need state management beyond conversation
-- Require game-specific metadata
+- General-purpose AI interactions
 
 ---
 
@@ -332,22 +314,230 @@ When explaining:
 - Make complex topics accessible
 ```
 
-### Game NPC
+### Interviewer Agent
 
 ```markdown
-You are Gorlock, a grumpy but kind-hearted blacksmith in the village of Oakvale.
+You are Jamie, a professional technical interviewer.
 
 Personality:
-- Gruff exterior, warm interior
-- Dislikes small talk
-- Respects hard workers
-- Has a dry sense of humor
+- Objective and fair
+- Encouraging but thorough
+- Values clarity and depth
+- Adapts difficulty based on responses
 
-Speech pattern:
-- Short, direct sentences
-- Occasional grumbling
-- Uses blacksmith metaphors
+Interview style:
+- Ask one question at a time
+- Provide hints when candidate is stuck
+- Follow up on interesting answers
+- Summarize key takeaways
 ```
+
+---
+
+## Creating Custom Persona Classes
+
+For specialized use cases, you can create custom Persona classes by inheriting from `PersonaBase`.
+
+### When to Create Custom Personas
+
+- **Game Characters**: Need NPC-specific fields (faction, location, quest hooks)
+- **Domain-specific metadata**: Medical agents with specializations, legal agents with jurisdictions
+- **Structured instruction generation**: Dynamically build instructions from structured data
+- **Advanced formatting**: Custom instruction templates with complex logic
+
+### Step 1: Create the Class
+
+```csharp
+using Glitch9.AIDevKit.Agents;
+using UnityEngine;
+
+namespace YourNamespace
+{
+    [CreateAssetMenu(menuName = "AI DevKit/Custom Persona/Game NPC")]
+    public class GameNpcPersona : PersonaBase
+    {
+        [Header("Identity")]
+        [SerializeField] private string npcName;
+        [SerializeField] private string faction;
+        [SerializeField] private string location;
+        
+        [Header("Dialogue")]
+        [SerializeField] private string questHook;
+        [SerializeField] private string catchphrase;
+        
+        // Override base properties
+        public override string AgentName => npcName;
+        public override string Description => $"NPC from {faction} in {location}";
+        
+        // Custom instruction formatting
+        protected override string FormatInstructions(string rawInstructions)
+        {
+            var sb = new StringBuilder();
+            
+            sb.AppendLine($"You are {npcName}, a member of the {faction} faction.");
+            sb.AppendLine($"You are currently in {location}.");
+            sb.AppendLine();
+            
+            if (!string.IsNullOrEmpty(questHook))
+            {
+                sb.AppendLine("Quest Hook:");
+                sb.AppendLine(questHook);
+                sb.AppendLine();
+            }
+            
+            if (!string.IsNullOrEmpty(catchphrase))
+            {
+                sb.AppendLine($"Use this catchphrase occasionally: \"{catchphrase}\"");
+                sb.AppendLine();
+            }
+            
+            // Append custom instructions
+            if (!string.IsNullOrEmpty(rawInstructions))
+            {
+                sb.AppendLine("Additional Instructions:");
+                sb.AppendLine(rawInstructions);
+            }
+            
+            return sb.ToString();
+        }
+    }
+}
+```
+
+### Step 2: Key Override Points
+
+#### Required Overrides
+
+```csharp
+public override string AgentName => "Your Agent Name";
+```
+
+#### Optional Overrides
+
+```csharp
+// Provide dynamic description
+public override string Description => GenerateDescription();
+
+// Custom user name
+public override string UserName => customUserName;
+
+// Dynamic starting message
+public override string StartingMessage => GenerateGreeting();
+
+// Custom instruction formatting (most powerful)
+protected override string FormatInstructions(string rawInstructions)
+{
+    // Build structured instructions from your fields
+    return ConstructInstructions();
+}
+```
+
+### Step 3: Best Practices
+
+**Use `FormatInstructions` for Structure**
+```csharp
+protected override string FormatInstructions(string rawInstructions)
+{
+    // Build instructions from serialized fields
+    var instructions = new StringBuilder(1024);
+    
+    // Add role definition
+    instructions.AppendLine($"# Role: {roleName}");
+    
+    // Add personality traits
+    instructions.AppendLine("# Personality:");
+    foreach (var trait in personalityTraits)
+        instructions.AppendLine($"- {trait}");
+    
+    // Append custom instructions last
+    if (!string.IsNullOrEmpty(rawInstructions))
+    {
+        instructions.AppendLine();
+        instructions.AppendLine("# Additional Instructions:");
+        instructions.AppendLine(rawInstructions);
+    }
+    
+    return instructions.ToString();
+}
+```
+
+**Validate Your Data**
+```csharp
+private void OnValidate()
+{
+    if (string.IsNullOrEmpty(npcName))
+        Debug.LogWarning("NPC Name is required!", this);
+        
+    if (faction == null || faction.Length == 0)
+        Debug.LogWarning("At least one faction should be assigned", this);
+}
+```
+
+**Use Header Attributes**
+```csharp
+[Header("Identity")]
+[SerializeField] private string characterName;
+[SerializeField] private int age;
+
+[Header("Abilities")]
+[SerializeField] private List<string> specialSkills;
+```
+
+### Example: Medical Specialist Persona
+
+```csharp
+[CreateAssetMenu(menuName = "AI DevKit/Custom Persona/Medical Specialist")]
+public class MedicalPersona : PersonaBase
+{
+    [Header("Credentials")]
+    [SerializeField] private string doctorName;
+    [SerializeField] private string specialization;
+    [SerializeField] private int yearsOfExperience;
+    
+    [Header("Practice")]
+    [SerializeField] private List<string> certifications;
+    [SerializeField] private bool canPrescribe = false;
+    
+    public override string AgentName => $"Dr. {doctorName}";
+    
+    protected override string FormatInstructions(string rawInstructions)
+    {
+        var sb = new StringBuilder();
+        
+        sb.AppendLine($"You are Dr. {doctorName}, a medical professional specializing in {specialization}.");
+        sb.AppendLine($"You have {yearsOfExperience} years of clinical experience.");
+        sb.AppendLine();
+        
+        if (certifications.Count > 0)
+        {
+            sb.AppendLine("Certifications:");
+            foreach (var cert in certifications)
+                sb.AppendLine($"- {cert}");
+            sb.AppendLine();
+        }
+        
+        sb.AppendLine("Medical Guidelines:");
+        sb.AppendLine("- Always recommend consulting a licensed physician for medical decisions");
+        sb.AppendLine("- Provide educational information, not diagnoses");
+        if (!canPrescribe)
+            sb.AppendLine("- You cannot prescribe medications");
+        sb.AppendLine();
+        
+        if (!string.IsNullOrEmpty(rawInstructions))
+            sb.AppendLine(rawInstructions);
+        
+        return sb.ToString();
+    }
+}
+```
+
+### Using Custom Personas
+
+Once created, use them like any other Persona:
+
+1. Create the asset: **Right-click > Create > AI DevKit > Custom Persona > [Your Type]**
+2. Configure the custom fields in the inspector
+3. Assign to Agent Profile's Persona field
 
 ---
 
