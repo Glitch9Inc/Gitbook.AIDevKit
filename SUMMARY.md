@@ -3,8 +3,7 @@
 ## Introduction
 
 * [AI Dev Kit](README.md)
-  * [Package Tiers & Provider Support](1_main/package-tiers.md)
-  * [Endpoint Supports](1_main/provider-supports/README.md)
+* [AI Dev Kit Packages](1_main/package-tiers.md)
 * [FAQ](1_main/faq.md)
 * [Troubleshooting](1_main/troubleshooting/README.md)
   * [AI Dev Kit does not appear in Tools menu](1_main/troubleshooting/ai-dev-kit-does-not-appear-in-tools-menu.md)
@@ -16,8 +15,6 @@
   * [HTTP/1.1 400 Bad Request](1_main/troubleshooting/http-1.1-400-bad-request.md)
   * [Timeout Issues](1_main/troubleshooting/timeout-issues.md)
   * [\[IL2CPP\] Cannot Convert 'Nullable\<Enum>' to 'int' During Android Build](1_main/troubleshooting/il2cpp-cannot-convert-nullable-less-than-enum-greater-than-to-int-during-android-build.md)
-* [Add-ons](1_main/add-ons/README.md)
-  * [Spreadsheet (Localization)](1_main/add-ons/spreadsheet-localization.md)
 * [Update Logs](1_main/update-logs/README.md)
   * [v5.0.0-v5.2.5](1_main/update-logs/ai-dev-kit-v5.md)
   * [v4.0.0-v4.8.5](1_main/update-logs/ai-dev-kit-v4.md)
