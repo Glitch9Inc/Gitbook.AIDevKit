@@ -4,7 +4,7 @@ icon: cube
 
 # AI Dev Kit
 
-<figure><img src=".gitbook/assets/Cover Image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Cover Image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## The Ultimate AI Suite for Unity
 
