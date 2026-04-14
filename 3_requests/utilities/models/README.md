@@ -2,7 +2,7 @@
 icon: microchip
 ---
 
-# Model Operations
+# Models
 
 AI Dev Kit provides model management operations for browsing and managing AI models.
 
@@ -111,9 +111,9 @@ await Api.Anthropic.ListModels().ExecuteAsync();
 
 ## Next Steps
 
-- [Get Model](get-model.md) - Retrieve single model
-- [List Models](list-models.md) - Browse all models
-- [Get Custom Model](get-custom-model.md) - Retrieve fine-tuned model
-- [List Custom Models](list-custom-models.md) - Browse fine-tuned models
-- [Delete Model](delete-model.md) - Remove custom model
-- [Fine-tuning](fine-tuning.md) - Create fine-tuned models
+* [Get Model](get-model.md) - Retrieve single model
+* [List Models](list-models.md) - Browse all models
+* [Get Custom Model](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/get-custom-model.md) - Retrieve fine-tuned model
+* [List Custom Models](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/list-custom-models.md) - Browse fine-tuned models
+* [Delete Model](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/delete-model.md) - Remove custom model
+* [Fine-tuning](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/fine-tuning.md) - Create fine-tuned models

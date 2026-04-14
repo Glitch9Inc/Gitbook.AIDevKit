@@ -260,6 +260,6 @@ var voices = await Api.ElevenLabs.ListVoices().ExecuteAsync();  // May fail
 
 ## Next Steps
 
-- [Get Voice](get-voice.md) - Get specific voice info
-- [List Custom Voices](list-custom-voices.md) - Browse user voices
-- [Text to Speech](../audio/text-to-speech.md) - Use voices for TTS
+* [Get Voice](get-voice.md) - Get specific voice info
+* [List Custom Voices](list-custom-voices.md) - Browse user voices
+* [Text to Speech](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/audio/text-to-speech.md) - Use voices for TTS

@@ -2,7 +2,7 @@
 icon: folder-open
 ---
 
-# File Operations
+# Files
 
 AI Dev Kit provides comprehensive file management operations for working with AI provider storage.
 
@@ -75,12 +75,12 @@ var uploadResult = await Api.OpenAI
 
 Different providers support different file purposes:
 
-| Purpose | Description | Use Case |
-|---------|-------------|----------|
+| Purpose      | Description         | Use Case         |
+| ------------ | ------------------- | ---------------- |
 | `assistants` | Assistant API files | RAG, file search |
-| `vision` | Vision API files | Image analysis |
-| `fine-tune` | Fine-tuning data | Model training |
-| `batch` | Batch API files | Bulk processing |
+| `vision`     | Vision API files    | Image analysis   |
+| `fine-tune`  | Fine-tuning data    | Model training   |
+| `batch`      | Batch API files     | Bulk processing  |
 
 ## Provider Support
 
@@ -110,10 +110,10 @@ await Api.Google.UploadFile(file).ExecuteAsync();
 
 ## Next Steps
 
-- [Upload File](upload-file.md) - Upload generic files
-- [Upload Image](upload-image.md) - Upload images
-- [Upload Audio](upload-audio.md) - Upload audio
-- [Upload Screenshot](upload-screenshot.md) - Capture and upload
-- [Download File](download-file.md) - Download files
-- [Delete File](delete-file.md) - Remove files
-- [List Files](list-files.md) - Browse files
+* [Upload File](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/upload-file.md) - Upload generic files
+* [Upload Image](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/upload-image.md) - Upload images
+* [Upload Audio](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/upload-audio.md) - Upload audio
+* [Upload Screenshot](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/upload-screenshot.md) - Capture and upload
+* [Download File](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/download-file.md) - Download files
+* [Delete File](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/delete-file.md) - Remove files
+* [List Files](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/files/list-files.md) - Browse files

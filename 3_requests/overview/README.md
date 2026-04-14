@@ -2,7 +2,7 @@
 icon: store
 ---
 
-# Requests Overview
+# Overview
 
 AI Dev Kit provides a **Fluent API** that makes it incredibly easy to generate AI content with just a few lines of code.
 
@@ -200,6 +200,6 @@ Api.OpenAI.GetCredits()
 
 ## Next Steps
 
-- [Fluent API Pattern](fluent-api-pattern.md) - Deep dive into the pattern
-- [Request vs Execute](request-vs-execute.md) - Understanding the execution model
-- [Provider Query Types](provider-query-types.md) - Advanced query options
+* [Fluent API Pattern](fluent-api-pattern.md) - Deep dive into the pattern
+* [Request vs Execute](../../AIDevKit/Unity.AIDevKit/3_requests/overview/request-vs-execute.md) - Understanding the execution model
+* [Provider Query Types](provider-query-types.md) - Advanced query options

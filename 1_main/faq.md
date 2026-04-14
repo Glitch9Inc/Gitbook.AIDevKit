@@ -17,10 +17,8 @@ Please join [Discord](https://discord.gg/hgajxPpJYf) if you have a question that
 There are lots of other ways to continue using AI Dev Kit. For free, if you want.
 
 * **Upgrade to a paid OpenAI API account** – This is the most straightforward and affordable option. Most users spend less than $1 per month when actively using AI Dev Kit.
-
-- **Try free alternatives like Google Gemini or OpenRouter** – Both Google and OpenRouter offers access to several free models that work seamlessly with AI Dev Kit. It's a great option if you're looking to continue development without spending anything.
-- **If you're looking for a local, cost-free option, AI Dev Kit also supports Ollama as an AI backend.** Ollama runs models directly on your device (or your own server), eliminating the need for API keys or internet access.
-
+* **Try free alternatives like Google Gemini or OpenRouter** – Both Google and OpenRouter offers access to several free models that work seamlessly with AI Dev Kit. It's a great option if you're looking to continue development without spending anything.
+* **If you're looking for a local, cost-free option, AI Dev Kit also supports Ollama as an AI backend.** Ollama runs models directly on your device (or your own server), eliminating the need for API keys or internet access.
 * **Create a new OpenAI account** – If you have access to an additional phone number, you may create a new OpenAI account to receive a new free trial API key.
 
 </details>
@@ -55,15 +53,14 @@ No worries — you can still use **AI Dev Kit** without spending a dime. Here ar
 
 * **Run models locally with Ollama**\
   Ollama lets you run powerful open-source models like LLaMA 3 directly on your machine, with **no API key or internet required**. It’s fully supported as a local backend in AI Dev Kit.\
-  [Start settings up Ollama here. ](../quick-start/self-hosting-with-ollama.md)
-
-- **Use Google Gemini's free tier**\
+  [Start settings up Ollama here.](../AIDevKit/Unity.AIDevKit/quick-start/self-hosting-with-ollama.md)
+* **Use Google Gemini's free tier**\
   Google Cloud offers a monthly free quota for Gemini models.\
   Simply sign up for a Google Cloud account, generate an API key, and you’re good to go.\
-  [Get Google's free API key here.](../platform-api/google-gemini/)
-- **Try OpenRouter’s free models**\
-  **OpenRouter** aggregates access to various models — some of which are free to use without authentication. You can easily distinguish which models are free using [AI Dev Kit Model Library.](broken-reference)\
-  [Get OpenRouter's free API key here.](../quick-start/api-key-setup/openrouter.md)
+  [Get Google's free API key here.](/broken/pages/tV9p1oYciHkApvP2p5XX)
+* **Try OpenRouter’s free models**\
+  **OpenRouter** aggregates access to various models — some of which are free to use without authentication. You can easily distinguish which models are free using [AI Dev Kit Model Library.](../AIDevKit/Unity.AIDevKit/1_introduction/broken-reference/)\
+  [Get OpenRouter's free API key here.](../AIDevKit/Unity.AIDevKit/quick-start/api-key-setup/openrouter.md)
 
 </details>
 
@@ -81,6 +78,7 @@ Free tiers vary significantly by provider and **change frequently**. Here's what
 **Always verify current limits directly with each provider** as they update their free tier policies regularly.
 
 Free tiers work well for:
+
 * Single-player experiences where you control AI usage
 * Development and testing phases
 * Low-traffic applications
@@ -121,9 +119,7 @@ Most major providers (OpenAI, Google, ElevenLabs) allow their APIs to be used in
 However, always check for:
 
 * **Attribution requirements**
-
-- **Content usage limits (e.g. for generated voices or images)**
-
+* **Content usage limits (e.g. for generated voices or images)**
 * **Prohibited use cases (e.g. misinformation, impersonation)**
 
 Refer to each provider’s Terms of Use to ensure full compliance.
@@ -137,11 +133,13 @@ Refer to each provider’s Terms of Use to ensure full compliance.
 **Technically yes, but it's not recommended for most cases.**
 
 If you embed your API key in a published game:
+
 * **All players share your quota** – Your free tier limits will be consumed quickly as more players use your game
 * **API costs scale with users** – Each player action that calls the API counts against your account
 * **Security risk** – API keys in client-side code can be extracted and abused
 
 **Better approaches:**
+
 * **Use Ollama for local inference** – Players run models on their own machines, eliminating API costs and server dependencies
 * **Build a backend proxy** – Route API calls through your own server where you can implement rate limiting, user authentication, and cost control
 * **Use paid tiers with safeguards** – Set spending limits and implement usage caps per user
@@ -182,12 +180,14 @@ Building your own integration means maintaining HTTP clients, handling JSON seri
 **"Lightweight" refers to the integration code and performance overhead, not the capabilities.**
 
 AI Dev Kit is lightweight in terms of:
+
 * **UniTask-based async operations** – Extremely efficient async/await without the overhead of C# Tasks or Unity Coroutines. Zero garbage allocation per call.
 * **Fluent API design** – One-line access to all AI features with method chaining (e.g., `"prompt".GENResponse().ExecuteAsync()`)
 * **Minimal boilerplate** – Generate images, speech, or chat responses without complex setup code
 * **Fast integration** – Add API keys and start using AI features in minutes
 
 **AI Dev Kit is NOT limited in power or complexity.** It supports:
+
 * **Production-ready AI infrastructure** – Text generation, image creation, voice synthesis, and speech recognition at scale
 * **High-quality asset generation** – Professional images, voices, sound effects, and music through provider APIs
 * **Complex AI agents** – Tool calling, function execution, multi-step reasoning, and conversation memory with full streaming support
@@ -205,11 +205,13 @@ The "power" comes from the AI models you choose (GPT-4, Claude, Gemini, etc.). A
 **AI Dev Kit is primarily a production AI infrastructure layer, not a code generation tool.**
 
 The core features are:
+
 * **Runtime AI integration** – Text, image, audio, and speech APIs for live gameplay
 * **AI Agents** – Chatbots, voice agents, and assistants with tool calling
 * **Asset generation** – Images, voices, sound effects, and music
 
 **Code generation is available experimentally** through the Editor Playground feature, where you can:
+
 * Test AI models for generating Unity scripts
 * Experiment with code completion and refactoring
 * Prototype simple components

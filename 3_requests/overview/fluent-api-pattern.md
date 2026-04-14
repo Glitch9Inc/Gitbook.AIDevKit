@@ -169,16 +169,16 @@ catch (Exception ex)
 
 ## Method Naming Convention
 
-| Prefix | Purpose | Examples |
-|--------|---------|----------|
-| `GEN` | Generate/Create content | `GENCompletion`, `GENImage`, `GENSpeech` |
-| `Upload` | Upload files | `UploadFile`, `UploadImage`, `UploadAudio` |
-| `Download` | Download files | `DownloadFile` |
-| `List` | List resources | `ListModels`, `ListVoices`, `ListFiles` |
-| `Get` | Retrieve single resource | `GetModel`, `GetVoice`, `GetCredits` |
-| `Delete` | Remove resource | `DeleteFile`, `DeleteModel` |
-| `Count` | Count tokens | `CountTokens` |
-| `Tokenize` | Get token IDs | `Tokenize` |
+| Prefix     | Purpose                  | Examples                                   |
+| ---------- | ------------------------ | ------------------------------------------ |
+| `GEN`      | Generate/Create content  | `GENCompletion`, `GENImage`, `GENSpeech`   |
+| `Upload`   | Upload files             | `UploadFile`, `UploadImage`, `UploadAudio` |
+| `Download` | Download files           | `DownloadFile`                             |
+| `List`     | List resources           | `ListModels`, `ListVoices`, `ListFiles`    |
+| `Get`      | Retrieve single resource | `GetModel`, `GetVoice`, `GetCredits`       |
+| `Delete`   | Remove resource          | `DeleteFile`, `DeleteModel`                |
+| `Count`    | Count tokens             | `CountTokens`                              |
+| `Tokenize` | Get token IDs            | `Tokenize`                                 |
 
 ## Extension Method Hosts
 
@@ -226,6 +226,6 @@ prompt.GENCode()
 
 ## Next Steps
 
-- [Request vs Execute](request-vs-execute.md) - Understanding when API calls happen
-- [Text Generation](../text/README.md) - Text generation examples
-- [Image Generation](../image/README.md) - Image generation examples
+* [Request vs Execute](../../AIDevKit/Unity.AIDevKit/3_requests/overview/request-vs-execute.md) - Understanding when API calls happen
+* [Text Generation](../text/) - Text generation examples
+* [Image Generation](../image/) - Image generation examples

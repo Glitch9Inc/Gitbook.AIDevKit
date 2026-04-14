@@ -23,9 +23,9 @@ foreach (var voice in response.Voices)
 
 Custom voices are voices that you or your organization have created:
 
-- **Voice cloning** - Clone a real person's voice
-- **Professional voice lab** - Professional voice creation service
-- **Instant voice cloning** - Quick voice cloning from samples
+* **Voice cloning** - Clone a real person's voice
+* **Professional voice lab** - Professional voice creation service
+* **Instant voice cloning** - Quick voice cloning from samples
 
 ## Unity Integration Examples
 
@@ -143,10 +143,10 @@ var customVoices = await Api.ElevenLabs.ListCustomVoices().ExecuteAsync();
 
 **Features:**
 
-- ✅ Voice cloning
-- ✅ Professional voice lab
-- ✅ Instant voice cloning
-- ✅ Voice editing
+* ✅ Voice cloning
+* ✅ Professional voice lab
+* ✅ Instant voice cloning
+* ✅ Voice editing
 
 ### OpenAI
 
@@ -264,6 +264,6 @@ public async UniTask<List<VoiceData>> GetCustomVoicesSafe()
 
 ## Next Steps
 
-- [Get Voice](get-voice.md) - Get specific voice info
-- [List Voices](list-voices.md) - Browse built-in voices
-- [Text to Speech](../audio/text-to-speech.md) - Use custom voices for TTS
+* [Get Voice](get-voice.md) - Get specific voice info
+* [List Voices](list-voices.md) - Browse built-in voices
+* [Text to Speech](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/audio/text-to-speech.md) - Use custom voices for TTS

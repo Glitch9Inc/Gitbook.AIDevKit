@@ -2,7 +2,7 @@
 icon: shield-halved
 ---
 
-# Moderation
+# Moderations
 
 AI Dev Kit provides content moderation capabilities to detect potentially harmful content using `.GENModeration()`.
 
@@ -10,10 +10,10 @@ AI Dev Kit provides content moderation capabilities to detect potentially harmfu
 
 Content moderation helps you:
 
-- Detect inappropriate or harmful content
-- Filter user-generated content
-- Comply with content policies
-- Protect users from harmful material
+* Detect inappropriate or harmful content
+* Filter user-generated content
+* Comply with content policies
+* Protect users from harmful material
 
 ## Basic Usage
 
@@ -32,11 +32,11 @@ if (result.IsFlagged)
 
 Moderation typically checks for:
 
-- **Hate**: Hateful or discriminatory content
-- **Harassment**: Bullying or harassing content
-- **Self-harm**: Self-harm or suicide-related content
-- **Sexual**: Sexual or explicit content
-- **Violence**: Violent or graphic content
+* **Hate**: Hateful or discriminatory content
+* **Harassment**: Bullying or harassing content
+* **Self-harm**: Self-harm or suicide-related content
+* **Sexual**: Sexual or explicit content
+* **Violence**: Violent or graphic content
 
 ## Input Types
 
@@ -267,5 +267,5 @@ await text.GENModeration(settings).ExecuteAsync();  // Check result!
 
 ## Next Steps
 
-- [Content Moderation](content-moderation.md) - Detailed moderation guide
-- [Safety Settings](safety-settings.md) - Configure safety thresholds
+* [Content Moderation](../../AIDevKit/Unity.AIDevKit/3_requests/moderation/content-moderation.md) - Detailed moderation guide
+* [Safety Settings](../../AIDevKit/Unity.AIDevKit/3_requests/moderation/safety-settings.md) - Configure safety thresholds

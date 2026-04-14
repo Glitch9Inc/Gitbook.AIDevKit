@@ -123,15 +123,15 @@ var voice = await Api.ElevenLabs.GetVoice("rachel").ExecuteAsync();
 
 **Available voices:**
 
-- `rachel` - Calm American female
-- `adam` - Deep American male
-- `antoni` - Well-rounded American male
-- `arnold` - Crisp American male
-- `bella` - Soft American female
-- `domi` - Strong American female
-- `elli` - Emotional American female
-- `josh` - Deep American male
-- `sam` - Raspy American male
+* `rachel` - Calm American female
+* `adam` - Deep American male
+* `antoni` - Well-rounded American male
+* `arnold` - Crisp American male
+* `bella` - Soft American female
+* `domi` - Strong American female
+* `elli` - Emotional American female
+* `josh` - Deep American male
+* `sam` - Raspy American male
 
 ### OpenAI
 
@@ -229,6 +229,6 @@ public async UniTask<VoiceData> GetVoiceSafe(string voiceId)
 
 ## Next Steps
 
-- [List Voices](list-voices.md) - Browse all voices
-- [List Custom Voices](list-custom-voices.md) - Browse user voices
-- [Text to Speech](../audio/text-to-speech.md) - Use voices for TTS
+* [List Voices](list-voices.md) - Browse all voices
+* [List Custom Voices](list-custom-voices.md) - Browse user voices
+* [Text to Speech](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/audio/text-to-speech.md) - Use voices for TTS

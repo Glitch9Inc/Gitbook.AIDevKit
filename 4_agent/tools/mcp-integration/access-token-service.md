@@ -10,11 +10,11 @@ Manage access tokens for MCP servers and external services.
 
 Access Token Service provides:
 
-- Centralized token management
-- Automatic token refresh
-- Secure token storage
-- Multi-service support
-- Token expiration handling
+* Centralized token management
+* Automatic token refresh
+* Secure token storage
+* Multi-service support
+* Token expiration handling
 
 ## Basic Setup
 
@@ -660,6 +660,6 @@ public class TokenServiceManager : MonoBehaviour
 
 ## Next Steps
 
-- [OAuth Providers](oauth-providers.md)
-- [Approval Handlers](approval-handlers.md)
-- [MCP Tools](../tools/hosted-tools/mcp.md)
+* [OAuth Providers](oauth-providers.md)
+* [Approval Handlers](approval-handlers.md)
+* [MCP Tools](../../../AIDevKit/Unity.AIDevKit/4_agent/tools/tools/hosted-tools/mcp.md)

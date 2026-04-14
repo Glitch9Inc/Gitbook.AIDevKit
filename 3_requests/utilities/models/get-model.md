@@ -134,25 +134,25 @@ var model = await Api.Google.GetModel("gemini-1.5-pro").ExecuteAsync();
 
 ### OpenAI
 
-- `gpt-4o` - Latest GPT-4 Omni
-- `gpt-4o-mini` - Smaller, faster GPT-4
-- `gpt-4-turbo` - GPT-4 Turbo
-- `gpt-3.5-turbo` - GPT-3.5 Turbo
-- `dall-e-3` - DALL-E 3
-- `whisper-1` - Whisper STT
-- `tts-1` - Text-to-Speech
+* `gpt-4o` - Latest GPT-4 Omni
+* `gpt-4o-mini` - Smaller, faster GPT-4
+* `gpt-4-turbo` - GPT-4 Turbo
+* `gpt-3.5-turbo` - GPT-3.5 Turbo
+* `dall-e-3` - DALL-E 3
+* `whisper-1` - Whisper STT
+* `tts-1` - Text-to-Speech
 
 ### Anthropic
 
-- `claude-3-5-sonnet-20241022` - Claude 3.5 Sonnet
-- `claude-3-opus-20240229` - Claude 3 Opus
-- `claude-3-haiku-20240307` - Claude 3 Haiku
+* `claude-3-5-sonnet-20241022` - Claude 3.5 Sonnet
+* `claude-3-opus-20240229` - Claude 3 Opus
+* `claude-3-haiku-20240307` - Claude 3 Haiku
 
 ### Google
 
-- `gemini-1.5-pro` - Gemini 1.5 Pro
-- `gemini-1.5-flash` - Gemini 1.5 Flash
-- `gemini-1.0-pro` - Gemini 1.0 Pro
+* `gemini-1.5-pro` - Gemini 1.5 Pro
+* `gemini-1.5-flash` - Gemini 1.5 Flash
+* `gemini-1.0-pro` - Gemini 1.0 Pro
 
 ## Best Practices
 
@@ -219,6 +219,6 @@ public async UniTask<ModelData> GetModelSafe(string modelId)
 
 ## Next Steps
 
-- [List Models](list-models.md) - Browse all available models
-- [Get Custom Model](get-custom-model.md) - Get fine-tuned models
-- [Fine-tuning](fine-tuning.md) - Create custom models
+* [List Models](list-models.md) - Browse all available models
+* [Get Custom Model](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/get-custom-model.md) - Get fine-tuned models
+* [Fine-tuning](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/fine-tuning.md) - Create custom models

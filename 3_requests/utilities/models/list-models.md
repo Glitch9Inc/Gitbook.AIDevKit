@@ -201,5 +201,5 @@ void Update()
 
 ## Next Steps
 
-- [Get Model](get-model.md) - Get specific model info
-- [List Custom Models](list-custom-models.md) - Browse fine-tuned models
+* [Get Model](get-model.md) - Get specific model info
+* [List Custom Models](../../../AIDevKit/Unity.AIDevKit/3_requests/utilities/models/list-custom-models.md) - Browse fine-tuned models

@@ -1,10 +1,10 @@
-﻿---
+---
 icon: cube
 ---
 
-# AI Dev Kit 5.1.0
+# AI Dev Kit
 
-<figure><img src=".gitbook/assets/Cover Image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Cover Image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## The Ultimate AI Suite for Unity
 
