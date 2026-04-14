@@ -1,6 +1,5 @@
 ---
 description: Learn the basics of API keys
-icon: key
 ---
 
 # API Key Setup

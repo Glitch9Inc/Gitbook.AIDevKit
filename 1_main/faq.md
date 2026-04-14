@@ -1,5 +1,4 @@
 ---
-icon: square-question
 ---
 
 # FAQ

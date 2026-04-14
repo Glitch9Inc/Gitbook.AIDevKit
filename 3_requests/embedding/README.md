@@ -1,5 +1,4 @@
 ---
-icon: diagram-project
 ---
 
 # Embedding

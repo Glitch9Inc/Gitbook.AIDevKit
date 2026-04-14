@@ -1,5 +1,4 @@
 ---
-icon: hexagon-plus
 ---
 
 # Add-ons

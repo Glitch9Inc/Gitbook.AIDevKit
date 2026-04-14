@@ -1,6 +1,5 @@
 ---
 description: Executing Multiple Tasks in Sequence
-icon: link
 ---
 
 # Sequence

@@ -1,6 +1,5 @@
 ---
 description: Provide URL-grounded context to the model
-icon: link
 ---
 
 # URL Context Tool

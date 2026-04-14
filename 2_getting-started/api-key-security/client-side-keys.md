@@ -1,6 +1,5 @@
 ---
 description: Why API keys are vulnerable in client-side applications, and how SecureToken is your first line of defense
-icon: triangle-exclamation
 ---
 
 # Client-Side Keys

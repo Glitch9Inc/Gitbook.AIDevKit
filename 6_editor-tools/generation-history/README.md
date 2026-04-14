@@ -1,5 +1,4 @@
 ---
-icon: clock-rotate-left
 ---
 
 # Generation History

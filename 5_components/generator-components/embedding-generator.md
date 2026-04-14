@@ -1,5 +1,4 @@
 ---
-icon: vector-square
 ---
 
 # Embedding Generator

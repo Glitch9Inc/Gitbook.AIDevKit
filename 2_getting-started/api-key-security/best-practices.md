@@ -1,6 +1,5 @@
 ---
 description: Actionable steps to minimize the risk of API key exposure in your project
-icon: list-check
 ---
 
 # Best Practices

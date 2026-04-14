@@ -1,5 +1,4 @@
 ---
-icon: key
 ---
 
 # Access Token Service

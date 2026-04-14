@@ -1,6 +1,5 @@
 ---
 description: Memory features for long-term context, summaries, titles, and personalization
-icon: brain
 ---
 
 # Memory

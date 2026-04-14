@@ -1,5 +1,4 @@
 ---
-icon: wrench
 ---
 
 # Utilities

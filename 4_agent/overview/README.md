@@ -1,6 +1,5 @@
 ---
 description: What an Agent is and how the system is structured
-icon: robot
 ---
 
 # Overview

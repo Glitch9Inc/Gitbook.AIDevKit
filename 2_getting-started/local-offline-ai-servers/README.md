@@ -1,6 +1,5 @@
 ---
 description: Set up local AI backends for private and offline workflows
-icon: server
 ---
 
 # Local Offline AI Server Setup

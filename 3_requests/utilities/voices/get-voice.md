@@ -1,5 +1,4 @@
 ---
-icon: user-music
 ---
 
 # Get Voice

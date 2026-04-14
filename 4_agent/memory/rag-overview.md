@@ -1,6 +1,5 @@
 ---
 description: How retrieval-augmented generation extends memory beyond recent messages
-icon: search
 ---
 
 # RAG Overview

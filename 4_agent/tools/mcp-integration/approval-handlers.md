@@ -1,5 +1,4 @@
 ---
-icon: check-double
 ---
 
 # Approval Handlers

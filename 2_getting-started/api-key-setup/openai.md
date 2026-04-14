@@ -1,6 +1,5 @@
 ---
 description: Set up your OpenAI API key and integration settings
-icon: flower
 ---
 
 # OpenAI

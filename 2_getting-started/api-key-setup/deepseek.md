@@ -1,5 +1,4 @@
 ---
-icon: brain-circuit
 ---
 
 # DeepSeek

@@ -1,6 +1,5 @@
 ---
 description: xAI-specific search tool type
-icon: search
 ---
 
 # X Search Tool

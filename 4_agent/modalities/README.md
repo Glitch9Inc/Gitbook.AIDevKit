@@ -1,5 +1,4 @@
 ---
-icon: arrows-left-right-to-line
 ---
 
 # Modalities (IO)

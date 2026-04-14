@@ -1,6 +1,5 @@
 ---
 description: A deep dive into SecureToken — the XOR-based obfuscation system that keeps your keys out of plain sight
-icon: lock
 ---
 
 # How AIDevKit Protects Your Keys

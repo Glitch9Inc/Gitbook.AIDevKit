@@ -1,6 +1,5 @@
 ---
 description: Use user profile and preferences to personalize agent behavior
-icon: user
 ---
 
 # Personalization

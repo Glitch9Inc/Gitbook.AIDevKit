@@ -1,5 +1,4 @@
 ---
-icon: align-left
 ---
 
 # Text Generation

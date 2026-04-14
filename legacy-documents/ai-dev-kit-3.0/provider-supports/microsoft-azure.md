@@ -1,5 +1,4 @@
 ---
-icon: windows
 ---
 
 # Microsoft Azure

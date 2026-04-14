@@ -1,5 +1,4 @@
 ---
-icon: microphone
 ---
 
 # Voice Input (Transcription)

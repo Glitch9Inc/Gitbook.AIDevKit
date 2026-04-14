@@ -1,5 +1,4 @@
 ---
-icon: eye
 ---
 
 # Agent Events Overview

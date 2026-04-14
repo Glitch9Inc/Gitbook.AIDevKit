@@ -1,5 +1,4 @@
 ---
-icon: terminal
 ---
 
 # Tool Call Managers

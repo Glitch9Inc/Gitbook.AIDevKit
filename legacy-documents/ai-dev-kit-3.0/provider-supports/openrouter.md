@@ -1,5 +1,4 @@
 ---
-icon: shuffle
 ---
 
 # OpenRouter

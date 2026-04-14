@@ -1,5 +1,4 @@
 ---
-icon: magnifying-glass
 ---
 
 # Get Model

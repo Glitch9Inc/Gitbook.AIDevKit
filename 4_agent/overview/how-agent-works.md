@@ -1,6 +1,5 @@
 ---
 description: A look inside the Agent - from Unity component to API response
-icon: diagram-project
 ---
 
 # How Agent Works

@@ -1,6 +1,5 @@
 ---
 description: Set up your Anthropic API key and integration settings.
-icon: slash-back
 ---
 
 # Anthropic

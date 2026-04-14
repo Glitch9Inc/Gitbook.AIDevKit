@@ -1,5 +1,4 @@
 ---
-icon: database
 ---
 
 # Data Manager

@@ -1,6 +1,5 @@
 ---
 description: Automatically generate conversation titles for better list readability
-icon: pencil
 ---
 
 # Title Generation

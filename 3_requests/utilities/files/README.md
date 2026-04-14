@@ -1,5 +1,4 @@
 ---
-icon: folder-open
 ---
 
 # Files

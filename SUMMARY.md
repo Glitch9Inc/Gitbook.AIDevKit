@@ -27,7 +27,7 @@
 ## Getting Started
 
 * [API Key Setup](2_getting-started/api-key-setup/README.md)
-    * [How to Get API Keys](2_getting-started/api-key-setup/how-to-get-api-keys.md)
+  * [How to Get API Keys](2_getting-started/api-key-setup/how-to-get-api-keys.md)
     * [OpenAI](2_getting-started/api-key-setup/openai.md)
     * [Google Gemini](2_getting-started/api-key-setup/google-gemini.md)
     * [ElevenLabs](2_getting-started/api-key-setup/elevenlabs.md)

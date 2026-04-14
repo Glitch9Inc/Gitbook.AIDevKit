@@ -1,5 +1,4 @@
 ---
-icon: message-lines
 ---
 
 # Playground Agent

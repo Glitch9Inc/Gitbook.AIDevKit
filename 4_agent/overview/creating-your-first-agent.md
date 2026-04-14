@@ -1,6 +1,5 @@
 ---
 description: Set up your first Agent in Unity from scratch in a few minutes
-icon: wand-magic-sparkles
 ---
 
 # Creating Your First Agent

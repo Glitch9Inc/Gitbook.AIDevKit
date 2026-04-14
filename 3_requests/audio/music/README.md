@@ -1,5 +1,4 @@
 ﻿---
-icon: music
 ---
 
 # Music Generation

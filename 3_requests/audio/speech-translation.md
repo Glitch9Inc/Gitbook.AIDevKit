@@ -1,5 +1,4 @@
 ---
-icon: language
 ---
 
 # Speech Translation

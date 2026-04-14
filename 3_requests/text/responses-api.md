@@ -1,5 +1,4 @@
 ---
-icon: bolt-lightning
 ---
 
 # Responses API

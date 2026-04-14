@@ -1,5 +1,4 @@
 ---
-icon: wallet
 ---
 
 # Get Credits

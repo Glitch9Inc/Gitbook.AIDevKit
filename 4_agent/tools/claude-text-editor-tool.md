@@ -1,6 +1,5 @@
 ---
 description: Anthropic-specific text editing tool type
-icon: edit
 ---
 
 # Claude Text Editor Tool

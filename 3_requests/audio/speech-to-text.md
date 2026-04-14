@@ -1,5 +1,4 @@
 ﻿---
-icon: microphone
 ---
 
 # Speech to Text

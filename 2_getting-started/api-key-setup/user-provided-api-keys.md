@@ -1,6 +1,5 @@
 ---
 description: Let each user provide and use their own API keys at runtime
-icon: user
 ---
 
 # User-Provided API Keys

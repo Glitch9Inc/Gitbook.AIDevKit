@@ -1,5 +1,4 @@
 ---
-icon: database
 ---
 
 # Conversation Stores

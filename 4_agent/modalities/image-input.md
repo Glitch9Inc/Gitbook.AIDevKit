@@ -1,5 +1,4 @@
 ---
-icon: eye
 ---
 
 # Image Input (Vision)

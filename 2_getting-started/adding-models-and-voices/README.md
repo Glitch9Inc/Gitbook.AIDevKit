@@ -1,5 +1,4 @@
 ---
-icon: square-plus
 ---
 
 # Adding Models & Voices

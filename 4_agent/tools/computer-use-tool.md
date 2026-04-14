@@ -1,6 +1,5 @@
 ---
 description: Allow the model to operate a computer-like environment
-icon: monitor
 ---
 
 # Computer Use Tool

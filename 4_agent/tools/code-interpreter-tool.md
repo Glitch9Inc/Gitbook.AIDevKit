@@ -1,6 +1,5 @@
 ---
 description: Execute code in a controlled runtime for analysis and transformation
-icon: code
 ---
 
 # Code Interpreter Tool

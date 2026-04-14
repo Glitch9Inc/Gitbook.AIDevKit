@@ -1,5 +1,4 @@
 ---
-icon: store
 ---
 
 # Overview

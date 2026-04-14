@@ -1,5 +1,4 @@
 ---
-icon: plug
 ---
 
 # Event Receivers

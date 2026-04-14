@@ -1,6 +1,5 @@
 ---
 description: Run local GGUF models through LM Studio and connect from AI Dev Kit
-icon: desktop
 ---
 
 # Self-Hosting with LM Studio

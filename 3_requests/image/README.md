@@ -1,5 +1,4 @@
 ---
-icon: image
 ---
 
 # Image Generation

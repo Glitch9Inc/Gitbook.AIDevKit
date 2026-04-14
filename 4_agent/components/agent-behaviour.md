@@ -1,5 +1,4 @@
 ---
-icon: robot
 ---
 
 # Agent Behaviour

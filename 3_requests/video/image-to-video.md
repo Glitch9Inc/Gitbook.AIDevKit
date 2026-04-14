@@ -1,5 +1,4 @@
 ---
-icon: film
 ---
 
 # Image to Video

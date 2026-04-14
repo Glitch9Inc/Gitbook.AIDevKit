@@ -1,5 +1,4 @@
 ---
-icon: screwdriver-wrench
 ---
 
 # Tools & Abilities

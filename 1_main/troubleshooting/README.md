@@ -1,5 +1,4 @@
 ---
-icon: hexagon-exclamation
 ---
 
 # Troubleshooting

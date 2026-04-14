@@ -1,6 +1,5 @@
 ---
 description: Run popular LLMs like Llama, Gemma and dozens of others locally for free
-icon: ram
 ---
 
 # Self-Hosting with Ollama

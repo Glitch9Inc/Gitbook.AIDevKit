@@ -1,6 +1,5 @@
 ---
 description: Run local shell commands through a tool interface
-icon: terminal
 ---
 
 # Local Shell Tool

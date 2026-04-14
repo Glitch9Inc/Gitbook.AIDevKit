@@ -1,5 +1,4 @@
 ---
-icon: volume
 ---
 
 # Voice Output (Speech)

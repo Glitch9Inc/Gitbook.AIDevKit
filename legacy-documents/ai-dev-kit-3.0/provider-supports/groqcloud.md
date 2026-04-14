@@ -1,5 +1,4 @@
 ---
-icon: code-commit
 ---
 
 # GroqCloud

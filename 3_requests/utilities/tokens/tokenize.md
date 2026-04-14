@@ -1,5 +1,4 @@
 ---
-icon: bars
 ---
 
 # Tokenize

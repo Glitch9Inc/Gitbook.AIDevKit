@@ -1,6 +1,5 @@
 ---
 description: Compress long chats into concise summaries for efficient memory
-icon: file
 ---
 
 # Conversation Summary

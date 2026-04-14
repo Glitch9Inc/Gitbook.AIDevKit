@@ -1,5 +1,4 @@
 ---
-icon: sparkles
 ---
 
 # Generation Hubs

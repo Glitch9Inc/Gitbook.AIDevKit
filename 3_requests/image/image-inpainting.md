@@ -1,5 +1,4 @@
 ---
-icon: fill-drip
 ---
 
 # Image Inpainting

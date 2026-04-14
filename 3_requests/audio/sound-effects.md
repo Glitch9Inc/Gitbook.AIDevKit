@@ -1,5 +1,4 @@
 ---
-icon: volume
 ---
 
 # Sound Effects

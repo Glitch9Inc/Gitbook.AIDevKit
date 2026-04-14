@@ -1,6 +1,5 @@
 ---
 description: Define provider-specific custom tools when standard types are not enough
-icon: sliders
 ---
 
 # Custom Tool

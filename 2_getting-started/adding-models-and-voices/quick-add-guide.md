@@ -2,7 +2,6 @@
 description: >-
   This guide shows you how to quickly add models and voices in just a few
   clicks.
-icon: bullseye-arrow
 ---
 
 # Quick Add Guide

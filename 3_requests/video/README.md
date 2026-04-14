@@ -1,5 +1,4 @@
 ---
-icon: video
 ---
 
 # Video Generation

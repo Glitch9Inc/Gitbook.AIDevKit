@@ -1,5 +1,4 @@
 ---
-icon: lemon
 ---
 
 # Generator Components

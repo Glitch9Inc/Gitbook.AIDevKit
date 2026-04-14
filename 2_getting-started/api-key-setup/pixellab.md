@@ -1,5 +1,4 @@
 ---
-icon: wand-magic-sparkles
 ---
 
 # PixelLab

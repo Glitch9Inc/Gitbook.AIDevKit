@@ -1,5 +1,4 @@
 ---
-icon: clock
 ---
 
 # Approval Timeout

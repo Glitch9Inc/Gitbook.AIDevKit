@@ -1,5 +1,4 @@
 ﻿---
-icon: flower
 ---
 
 # OpenAI

@@ -1,5 +1,4 @@
 ---
-icon: calendar-lines-pen
 ---
 
 # Update Logs

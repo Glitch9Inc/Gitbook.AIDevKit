@@ -1,6 +1,5 @@
 ---
 description: Quick index for provider-specific API key creation guides
-icon: key
 ---
 
 # How to Get API Keys

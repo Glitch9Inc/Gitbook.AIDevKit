@@ -1,5 +1,4 @@
 ---
-icon: waveform
 ---
 
 # Voice Changer

@@ -1,5 +1,4 @@
 ---
-icon: comments
 ---
 
 # Chat Completions

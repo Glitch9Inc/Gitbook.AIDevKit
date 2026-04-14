@@ -1,5 +1,4 @@
 ---
-icon: slash-back
 ---
 
 # Anthropic

@@ -1,6 +1,5 @@
 ---
 description: Retrieve relevant content from indexed files
-icon: file
 ---
 
 # File Search Tool

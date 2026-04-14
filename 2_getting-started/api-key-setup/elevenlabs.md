@@ -1,6 +1,5 @@
 ---
 description: Set up your ElevenLabs API key and integration settings.
-icon: circle-play
 ---
 
 # ElevenLabs

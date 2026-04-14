@@ -1,6 +1,5 @@
 ---
 description: Introduction to OpenAI Assistants API-v2 and Tool Usage Guide
-icon: message-bot
 ---
 
 # Assistants API

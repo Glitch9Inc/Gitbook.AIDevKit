@@ -1,6 +1,5 @@
 ---
 description: Set up your Google Gemini API key and integration settings.
-icon: google
 ---
 
 # Google Gemini

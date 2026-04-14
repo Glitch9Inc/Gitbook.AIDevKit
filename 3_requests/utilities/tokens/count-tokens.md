@@ -1,5 +1,4 @@
 ---
-icon: calculator
 ---
 
 # Count Tokens

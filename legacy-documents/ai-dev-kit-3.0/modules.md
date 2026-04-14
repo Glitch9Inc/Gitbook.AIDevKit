@@ -2,7 +2,6 @@
 description: >-
   Optional modules that let your AI listen, speak, generate images, or execute
   functions.
-icon: codepen
 ---
 
 # Modules

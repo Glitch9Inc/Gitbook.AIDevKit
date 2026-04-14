@@ -1,5 +1,4 @@
 ---
-icon: microphone-lines
 ---
 
 # Text to Speech

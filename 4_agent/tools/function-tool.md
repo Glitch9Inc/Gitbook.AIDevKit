@@ -1,6 +1,5 @@
 ---
 description: Call developer-defined functions through structured tool calls
-icon: wrench
 ---
 
 # Function Tool

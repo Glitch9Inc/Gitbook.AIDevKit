@@ -1,6 +1,5 @@
 ---
 description: Generate images from text prompts within tool-calling workflows
-icon: image
 ---
 
 # Image Generation Tool

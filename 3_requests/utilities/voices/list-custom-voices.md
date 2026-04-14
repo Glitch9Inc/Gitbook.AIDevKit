@@ -1,5 +1,4 @@
 ---
-icon: user-gear
 ---
 
 # List Custom Voices

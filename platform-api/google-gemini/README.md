@@ -1,5 +1,4 @@
 ---
-icon: google
 ---
 
 # Google Gemini

@@ -1,6 +1,5 @@
 ---
 description: Create code snippets with one click.
-icon: square-code
 ---
 
 # Creating Snippets

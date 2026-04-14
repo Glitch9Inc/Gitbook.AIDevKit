@@ -1,6 +1,5 @@
 ---
 description: How agents remember past messages and retrieve relevant context using RAG
-icon: brain
 ---
 
 # Memory (RAG)

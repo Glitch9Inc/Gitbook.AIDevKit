@@ -1,5 +1,4 @@
 ---
-icon: layer-group
 ---
 
 # Package Tiers & Provider Support

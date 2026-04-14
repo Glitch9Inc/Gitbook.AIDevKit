@@ -1,5 +1,4 @@
 ---
-icon: id-card
 ---
 
 # Agent Profile

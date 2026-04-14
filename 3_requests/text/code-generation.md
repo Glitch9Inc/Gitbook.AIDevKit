@@ -1,5 +1,4 @@
 ---
-icon: code
 ---
 
 # Code Generation

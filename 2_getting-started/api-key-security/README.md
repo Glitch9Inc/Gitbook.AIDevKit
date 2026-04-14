@@ -1,6 +1,5 @@
 ---
 description: Understand the risks of client-side API keys and how AIDevKit helps protect them
-icon: shield
 ---
 
 # API Key Security

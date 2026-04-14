@@ -1,5 +1,4 @@
 ---
-icon: clapperboard
 ---
 
 # Text to Video

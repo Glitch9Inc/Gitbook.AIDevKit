@@ -1,5 +1,4 @@
 ---
-icon: cube
 ---
 
 # AI Dev Kit

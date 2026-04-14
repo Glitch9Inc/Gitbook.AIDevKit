@@ -1,6 +1,5 @@
 ---
 description: AI Dev Kit API Reference Documentation
-icon: code
 ---
 
 # API Reference

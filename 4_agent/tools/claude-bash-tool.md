@@ -1,6 +1,5 @@
 ---
 description: Anthropic-specific bash execution tool type
-icon: terminal
 ---
 
 # Claude Bash Tool

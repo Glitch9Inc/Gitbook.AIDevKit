@@ -1,5 +1,4 @@
 ---
-icon: volume-high
 ---
 
 # Audio Generation

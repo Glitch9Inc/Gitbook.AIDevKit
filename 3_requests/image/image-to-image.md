@@ -1,5 +1,4 @@
 ---
-icon: repeat
 ---
 
 # Image to Image

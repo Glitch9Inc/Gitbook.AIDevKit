@@ -1,6 +1,5 @@
 ---
 description: Set up your OpenRouter API key and integration settings.
-icon: shuffle
 ---
 
 # OpenRouter

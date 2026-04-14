@@ -1,6 +1,5 @@
 ---
 description: Configure Sherpa-ONNX for offline speech-to-text and text-to-speech
-icon: audio
 ---
 
 # Setting Up Sherpa-ONNX (Offline STT/TTS)

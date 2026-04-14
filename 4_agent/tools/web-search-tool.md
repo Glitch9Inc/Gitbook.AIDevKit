@@ -1,6 +1,5 @@
 ---
 description: Let the model retrieve information from the web
-icon: globe
 ---
 
 # Web Search Tool
