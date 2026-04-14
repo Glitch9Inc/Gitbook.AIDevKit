@@ -3,26 +3,26 @@
 ## Introduction
 
 * [AI Dev Kit](README.md)
-  * [Package Tiers & Provider Support](1_introduction/package-tiers.md)
-  * [Endpoint Supports](1_introduction/provider-supports/README.md)
-* [FAQ](1_introduction/faq.md)
-* [Troubleshooting](1_introduction/troubleshooting/README.md)
-  * [AI Dev Kit does not appear in Tools menu](1_introduction/troubleshooting/ai-dev-kit-does-not-appear-in-tools-menu.md)
-  * [The type or namespace name 'AIDevKit' could not be found](1_introduction/troubleshooting/the-type-or-namespace-name-aidevkit-could-not-be-found.md)
-  * [The type or namespace name 'Newtonsoft' could not be found](1_introduction/troubleshooting/the-type-or-namespace-name-newtonsoft-could-not-be-found.md)
-  * [The type or namespace name 'UniTask<>' could not be found](1_introduction/troubleshooting/the-type-or-namespace-name-unitask-less-than-greater-than-could-not-be-found.md)
-  * [Getting Complier Errors after AI Dev Kit update](1_introduction/troubleshooting/getting-complier-errors-after-ai-dev-kit-update.md)
-  * [Model 'gpt-4o (or other model name)' not found](1_introduction/troubleshooting/model-gpt-4o-or-other-model-name-not-found.md)
-  * [HTTP/1.1 400 Bad Request](1_introduction/troubleshooting/http-1.1-400-bad-request.md)
-  * [Timeout Issues](1_introduction/troubleshooting/timeout-issues.md)
-  * [\[IL2CPP\] Cannot Convert 'Nullable\<Enum>' to 'int' During Android Build](1_introduction/troubleshooting/il2cpp-cannot-convert-nullable-less-than-enum-greater-than-to-int-during-android-build.md)
-* [Add-ons](1_introduction/add-ons/README.md)
-  * [Spreadsheet (Localization)](1_introduction/add-ons/spreadsheet-localization.md)
-* [Update Logs](1_introduction/update-logs/README.md)
-  * [v4.0.0-v4.8.0](1_introduction/update-logs/ai-dev-kit-v4.md)
-  * [v3.0.0-v3.11.22](1_introduction/update-logs/ai-dev-kit-v3.md)
-  * [v2.0.0-v2.5.4](1_introduction/update-logs/ai-dev-kit-v2.md)
-  * [v1.0.0-v1.3.3](1_introduction/update-logs/ai-dev-kit-v1.md)
+  * [Package Tiers & Provider Support](1_main/package-tiers.md)
+  * [Endpoint Supports](1_main/provider-supports/README.md)
+* [FAQ](1_main/faq.md)
+* [Troubleshooting](1_main/troubleshooting/README.md)
+  * [AI Dev Kit does not appear in Tools menu](1_main/troubleshooting/ai-dev-kit-does-not-appear-in-tools-menu.md)
+  * [The type or namespace name 'AIDevKit' could not be found](1_main/troubleshooting/the-type-or-namespace-name-aidevkit-could-not-be-found.md)
+  * [The type or namespace name 'Newtonsoft' could not be found](1_main/troubleshooting/the-type-or-namespace-name-newtonsoft-could-not-be-found.md)
+  * [The type or namespace name 'UniTask<>' could not be found](1_main/troubleshooting/the-type-or-namespace-name-unitask-less-than-greater-than-could-not-be-found.md)
+  * [Getting Complier Errors after AI Dev Kit update](1_main/troubleshooting/getting-complier-errors-after-ai-dev-kit-update.md)
+  * [Model 'gpt-4o (or other model name)' not found](1_main/troubleshooting/model-gpt-4o-or-other-model-name-not-found.md)
+  * [HTTP/1.1 400 Bad Request](1_main/troubleshooting/http-1.1-400-bad-request.md)
+  * [Timeout Issues](1_main/troubleshooting/timeout-issues.md)
+  * [\[IL2CPP\] Cannot Convert 'Nullable\<Enum>' to 'int' During Android Build](1_main/troubleshooting/il2cpp-cannot-convert-nullable-less-than-enum-greater-than-to-int-during-android-build.md)
+* [Add-ons](1_main/add-ons/README.md)
+  * [Spreadsheet (Localization)](1_main/add-ons/spreadsheet-localization.md)
+* [Update Logs](1_main/update-logs/README.md)
+  * [v4.0.0-v4.8.0](1_main/update-logs/ai-dev-kit-v4.md)
+  * [v3.0.0-v3.11.22](1_main/update-logs/ai-dev-kit-v3.md)
+  * [v2.0.0-v2.5.4](1_main/update-logs/ai-dev-kit-v2.md)
+  * [v1.0.0-v1.3.3](1_main/update-logs/ai-dev-kit-v1.md)
 
 ## Getting Started
 
@@ -160,6 +160,26 @@
 * [Generation Hubs](6_playgrounds/generation-hubs/README.md)
 * [Generation History](6_editor-tools/generation-history/README.md)
 * [Data Manager](6_editor-tools/data-manager/README.md)
+
+<!--
+## Provider APIs
+
+*[Overview](7_provider_apis/README.md)
+*[Provider-Specific APIs](7_provider_apis/README.md)
+  * [OpenAI](7_provider_apis/openai/README.md)
+  * [Google Gemini](7_provider_apis/google-gemini/README.md)
+  * [ElevenLabs](7_provider_apis/elevenlabs/README.md)
+  * [OpenRouter](7_provider_apis/openrouter/README.md)
+  * [Anthropic Claude](7_provider_apis/anthropic/README.md)
+  * [GroqCloud](7_provider_apis/groqcloud/README.md)
+  * [DeepSeek](7_provider_apis/deepseek/README.md)
+  * [Microsoft Azure](7_provider_apis/microsoft-azure/README.md)
+  * [Perplexity](7_provider_apis/perplexity/README.md)
+  * [xAI (Grok)](7_provider_apis/xai-grok/README.md)
+  * [Cohere](7_provider_apis/cohere/README.md)
+  * [PixelLab](7_provider_apis/pixellab/README.md)
+-->
+
 <!--
 ## Legacy Documents
 
