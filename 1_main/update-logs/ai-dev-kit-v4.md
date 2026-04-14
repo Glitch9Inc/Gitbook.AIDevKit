@@ -1,7 +1,75 @@
 ﻿# AI Dev Kit v4
 
-### v4.8.0 (2025-11-30)
+### v4.8.5 (2025-12-09)
 
+* [Improved] API key validation logic and error messaging
+* [Fixed] Minor UI issues in the Model Library and Voice Library windows
+* [Changed] Renamed IRequestParam → IRequestParameter for clarity
+* [Changed] Renamed RequestParamType → RequestParameterType for clarity
+* [Improved] General error handling improvements
+* [New] Amazon AWS — Initial integration (Enterprise)
+* [New] Amazon Bedrock (chat and model services)
+* [New] Amazon S3 (file storage)
+* [New] Amazon Polly (text-to-speech)
+* [New] Amazon Transcribe (speech-to-text)
+
+### v4.8.4 (2025-12-04)
+
+* [Fixed] GroqCloud client request failures
+* [Fixed] Anthropic client serialization issues
+* [Fixed] xAI client connectivity issues
+* [Fixed] Ollama client errors
+* [Fixed] Ollama chat stream handler parsing
+* [Changed] FileDownload now returns IFile instead of FileContentData
+* [Changed] Migrated Settings Provider UI to UIToolkit
+* [Fixed] Stack overflow in ImageGeneratorWindow
+* [Changed] Image API: Renamed ImageInpaintRequest → ImageEditRequest
+* [New] Image API: Added ImageEditType enum (required for all image edit requests)
+* [New] Image API: Added precise per-request usage calculation
+* [New] Image API: Added Amazon Titan image generation configurations
+* [New] Image API: Added Stability AI image generation configurations
+* [Improved] Embedding API: Extended EmbeddingPrompt to support Audio and Video input types
+* [New] AI21 Labs — Added Chat, Models, and Files API support (Enterprise)
+* [New] Amazon Bedrock — Added Count Tokens, Models, Converse API adapter, Titan Image adapter, and Stability adapter (Enterprise)
+
+### v4.8.3 (2025-12-04)
+
+* [Fixed] GroqCloud, Anthropic, xAI, and Ollama client issues
+* [Fixed] Ollama chat stream handler
+* [Fixed] Stack overflow crash in ImageGeneratorWindow
+* [Changed] Migrated Settings Provider UI to UIToolkit
+* [Changed] Image API: Renamed ImageInpaintRequest → ImageEditRequest; added ImageEditType
+* [New] Image API: Added Titan and Stability AI configurations to image requests
+* [Improved] Embedding API: Added Audio and Video input type support
+* [New] AI21 Labs — Added Chat, Models, and Files API (Enterprise)
+* [New] Amazon Bedrock — Added Count Tokens, Models, Converse API, Titan Image, and Stability adapters (Enterprise)
+
+### v4.8.2 (2025-12-03)
+
+* [New] Added music generation request type (GENMusic)
+* [New] Implemented ElevenLabs music generation
+* [Changed] Refactored and cleaned up the ElevenLabs client
+* [New] Added Mistral moderation API support
+* [Changed] Consolidated duplicate HarmCategory entries
+* [New] Added file download (FileDownload) and signed URL (FileGetSignedUrl) request types
+* [New] Added Mistral text-to-speech and streaming TTS
+* [New] Added OCR request type (GENOcr), OcrModelType, and OcrPrompt
+* [New] Added Music Generator Window
+* [New] Added OCR Text Generator Window
+* [Improved] UserProfile and AgentProfile custom inspectors
+* [Changed] Removed unused GUI and assembly code
+
+### v4.8.1 (2025-12-01)
+
+* [Changed] Reorganized and cleaned up project file structure
+* [Changed] Standardized naming conventions across the codebase
+* [New] Cohere API — chat streaming, function calling, and message content support (Enterprise)
+* [New] Mistral API — thinking-token processing and function calling support (Enterprise)
+* [Changed] Refactored MessageContent and ContentPart for extensibility
+* [New] Added new ContentPart types: DocumentPart, ThinkingPart, ReferencePart
+* [Changed] Simplified streaming API: replaced CreateStreamAsync + await foreach with StreamAsync + await foreach
+
+### v4.8.0 (2025-11-30)
 
 * [Fixed] Model and Voice assets path normalization issues resolved
 
