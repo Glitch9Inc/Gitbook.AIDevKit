@@ -27,7 +27,7 @@
 ## Getting Started
 
 * [API Key Setup](2_getting-started/api-key-setup/README.md)
-  * [How to Get API Keys](2_getting-started/api-key-setup/README.md)
+    * [How to Get API Keys](2_getting-started/api-key-setup/how-to-get-api-keys.md)
     * [OpenAI](2_getting-started/api-key-setup/openai.md)
     * [Google Gemini](2_getting-started/api-key-setup/google-gemini.md)
     * [ElevenLabs](2_getting-started/api-key-setup/elevenlabs.md)
@@ -157,9 +157,12 @@
 * [Overview](5_components/README.md)
 * [Unity Components](5_components/generator-components/README.md)
   * [Image Generator](5_components/generator-components/image-generator.md)
+  * [Video Generator](5_components/generator-components/video-generator.md)
   * [Speech Generator](5_components/generator-components/speech-generator.md)
   * [Speech Transcriber](5_components/generator-components/speech-transcriber.md)
+  * [Audio Isolator](5_components/generator-components/audio-isolator.md)
   * [Voice Changer](5_components/generator-components/voice-changer.md)
+  * [Embedding Generator](5_components/generator-components/embedding-generator.md)
   * [Content Moderator](5_components/generator-components/content-moderator.md)
 
 ## Unity Editor
