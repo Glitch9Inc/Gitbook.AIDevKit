@@ -109,7 +109,7 @@
   * [Tokens](3_requests/utilities/tokens/README.md)
     * [Tokenize](3_requests/utilities/tokens/tokenize.md)
     * [Count Tokens](3_requests/utilities/tokens/count-tokens.md)
-    * [Get Credits](3_requests/utilities/tokens/get-credits.md)
+  * [Get Credits](3_requests/utilities/get-credits.md)
 
 ## Agent
 
@@ -146,6 +146,15 @@
   * [Approval Handlers](4_agent/tools/mcp-integration/approval-handlers.md)
   * [Approval Timeout](4_agent/tools/mcp-integration/approval-timeout.md)
   * [OAuth Providers](4_agent/tools/mcp-integration/oauth-providers.md)
+* [Enterprise Integrations](4_agent/enterprise/README.md)
+  * [Overview](4_agent/enterprise/overview.md)
+  * [Microsoft Graph](4_agent/enterprise/microsoft-graph/README.md)
+    * [Authentication & Setup](4_agent/enterprise/microsoft-graph/authentication.md)
+    * [SharePoint Tool](4_agent/enterprise/microsoft-graph/sharepoint-tool.md)
+    * [Calendar Tool](4_agent/enterprise/microsoft-graph/calendar-tool.md)
+    * [Mail Tool](4_agent/enterprise/microsoft-graph/mail-tool.md)
+    * [OneDrive Tool](4_agent/enterprise/microsoft-graph/onedrive-tool.md)
+    * [Todo Tool](4_agent/enterprise/microsoft-graph/todo-tool.md)
 * [Unity Components](4_agent/components/README.md)
   * [Agent Behaviour](4_agent/components/agent-behaviour.md) 
   * [Agent Profile](4_agent/components/agent-profile.md)
