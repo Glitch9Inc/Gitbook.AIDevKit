@@ -106,9 +106,10 @@
     * [Download File](unified-api/utilities/files/download-file.md)
     * [Delete File](unified-api/utilities/files/delete-file.md)
     * [List Files](unified-api/utilities/files/list-files.md)
-  * [Tokenize](3_requests/utilities/tokenize.md)
-    * [Count Tokens](3_requests/utilities/count-tokens.md)
-    * [Get Credits](3_requests/utilities/get-credits.md)
+  * [Tokens](3_requests/utilities/tokens/README.md)
+    * [Tokenize](3_requests/utilities/tokens/tokenize.md)
+    * [Count Tokens](3_requests/utilities/tokens/count-tokens.md)
+    * [Get Credits](3_requests/utilities/tokens/get-credits.md)
 
 ## Agent
 
