@@ -20,9 +20,8 @@
   * [Spreadsheet (Localization)](1_main/add-ons/spreadsheet-localization.md)
 * [Update Logs](1_main/update-logs/README.md)
   * [v4.0.0-v4.8.0](1_main/update-logs/ai-dev-kit-v4.md)
-  * [v3.0.0-v3.11.22](1_main/update-logs/ai-dev-kit-v3.md)
-  * [v2.0.0-v2.5.4](1_main/update-logs/ai-dev-kit-v2.md)
-  * [v1.0.0-v1.3.3](1_main/update-logs/ai-dev-kit-v1.md)
+  * [v3.0.0-v3.11.22](1_main/update-logs/ai-dev-kit-v3.md) 
+  * [v1.0.0-v2.5.4](1_main/update-logs/ai-dev-kit-v1-2.md)
 
 ## Getting Started
 
