@@ -45,13 +45,14 @@
     * [Client-Side Keys](2_getting-started/api-key-security/client-side-keys.md)
     * [How AIDevKit Protects Your Keys](2_getting-started/api-key-security/how-aidevkit-protects-your-keys.md)
     * [Best Practices](2_getting-started/api-key-security/best-practices.md)
-* [Adding Models & Voices](2_getting-started/adding-models-and-voices/README.md)
-  * [Quick Add Guide](2_getting-started/adding-models-and-voices/quick-add-guide.md)
-  * [Creating Snippets](2_getting-started/adding-models-and-voices/creating-snippets.md)
-* [Local Offline AI Server Setup](2_getting-started/local-offline-ai-servers/README.md)
+* [Local Offline AI Setup](2_getting-started/local-offline-ai-servers/README.md)
   * [Self-Hosting with Ollama](2_getting-started/self-hosting-with-ollama.md)
   * [Self-Hosting with LM Studio](2_getting-started/local-offline-ai-servers/self-hosting-with-lm-studio.md)
   * [Setting Up Sherpa-ONNX (Offline STT/TTS)](2_getting-started/local-offline-ai-servers/setting-up-sherpa-onnx.md)
+* [Adding Models & Voices](2_getting-started/adding-models-and-voices/README.md)
+  * [Quick Add Guide](2_getting-started/adding-models-and-voices/quick-add-guide.md)
+  * [Creating Snippets](2_getting-started/adding-models-and-voices/creating-snippets.md)
+
 
 ## Unified API
 
