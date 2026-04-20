@@ -1,48 +1,44 @@
 ---
 ---
 
-# AIDevKit Packages & Add-Ons
+# Available Packages & Add-Ons
 
 ### Package Overview
 
-#### AIDevKit Studio
+#### AI DevKit Studio
+
+![AI DevKit Studio](../.gitbook/assets/ai-devkit-cover.png)
 
 Core package for AI requests with the most common provider set.
 Includes text, image, and audio workflows for production-ready basics.
 
-#### AI Agent Kit
+#### AI Agent Kit (AIDevKit Pro)
+
+![AI Agent Kit](../.gitbook/assets/ai-devkit-pro-cover.png)
 
 Extends Studio with AI Agent components and advanced runtime features.
 Adds broader provider options and tooling for agent-style interactions.
 
-#### AIDevKit Enterprise
+#### AI DevKit Enterprise
+
+![AI DevKit Enterprise](../.gitbook/assets/ai-devkit-enterprise-cover.png)
 
 Complete package with full provider access and all major components.
 Includes enterprise-focused integrations and extended feature coverage.
 
 #### AI Pixel Art (Add-on)
 
+![AI Pixel Art](../.gitbook/assets/ai-pixel-art-cover.png)
+
 Add-on for pixel art generation workflows in Unity (coming soon).
 GitBook: https://glitch9.gitbook.io/ai-dev-kit-pixel-art
 
 #### AI Sheets (Add-on)
 
+![AI Sheets](../.gitbook/assets/ai-sheets-cover.png)
+
 Add-on for structured spreadsheet/data generation workflows (coming soon).
-GitBook: https://glitch9.gitbook.io/ai-dev-kit-sheets
-
-#### Spreadsheet (Localization) (Add-on)
-
-Localization-focused spreadsheet workflow add-on for multilingual content pipelines.
-
-***
-
-<figure><img src="../.gitbook/assets/Spreadsheet - Asset Store - Social Media Image.png" alt=""><figcaption></figcaption></figure>
-
-{% embed url="https://assetstore.unity.com/packages/tools/ai-ml-integration/aidevkit-localization-ai-powered-spreadsheets-283657" %}
-
-{% embed url="https://glitch9.gitbook.io/ai-dev-kit-localization" %}
-
-***
+GitBook: https://glitch9.gitbook.io/ai-dev-kit-sheets  
 
 ### Provider Supports
 
