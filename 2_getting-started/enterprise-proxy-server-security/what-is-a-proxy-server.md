@@ -14,6 +14,10 @@ You run this:
 
 - Unity client -> Your gateway -> OpenAI/Anthropic/etc
 
+> Screenshot placeholder:
+> Add architecture diagram here (Unity Client -> Gateway Server -> AI Providers).
+> Suggested caption: "Enterprise routing model: clients call only your gateway; provider keys stay server-side."
+
 ## Core role in AIDevKit Enterprise
 
 The gateway server becomes the single entry point for model traffic.
@@ -42,10 +46,3 @@ Think of it as an API firewall + router for AI traffic:
 
 - Firewall: validates and rejects unauthorized or out-of-policy requests
 - Router: forwards only approved traffic to approved providers/models
-
-## Screenshot to add
-
-- **Capture name**: `gateway-architecture-overview`
-- **Where to capture**: simple architecture diagram (Unity Client -> Gateway Server -> AI Providers)
-- **Placement suggestion**: directly under "A gateway server ... sits between" paragraph
-- **Caption suggestion**: "Enterprise routing model: clients call only your gateway; provider keys stay server-side."

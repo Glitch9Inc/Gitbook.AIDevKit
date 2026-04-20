@@ -46,7 +46,6 @@
   * [What Is The Gateway Server?](2_getting-started/enterprise-proxy-server-security/what-is-a-proxy-server.md)
   * [Why Enterprise Teams Use It](2_getting-started/enterprise-proxy-server-security/why-enterprise-uses-proxy.md)
   * [Run It With Wizard (Local Test)](2_getting-started/enterprise-proxy-server-security/run-with-wizard-local-test.md)
-  * [Screenshot Guide (Where To Capture)](2_getting-started/enterprise-proxy-server-security/screenshot-guide.md)
 * [Local Offline AI Setup](2_getting-started/local-offline-ai-servers/README.md)
   * [Self-Hosting with Ollama](2_getting-started/self-hosting-with-ollama.md)
   * [Self-Hosting with LM Studio](2_getting-started/local-offline-ai-servers/self-hosting-with-lm-studio.md)

@@ -19,6 +19,10 @@ A gateway gives one control plane for all AI calls:
 - Restrict target APIs to registered providers
 - Enforce fail-closed behavior in production
 
+> Screenshot placeholder:
+> Add a Unity Gateway Settings capture here showing routing profile and registered providers.
+> Suggested caption: "Gateway policy controls in one place: routing profile, auth, and registered provider restrictions."
+
 ## 3) Cost and abuse control
 
 Server-side controls are easier to enforce than client-side controls:
@@ -51,10 +55,3 @@ Strongly recommended when your app has one or more of:
 - Shared corporate billing account
 - Compliance/security review requirements
 - Multi-provider routing needs
-
-## Screenshot to add
-
-- **Capture name**: `gateway-policy-and-security-benefits`
-- **Where to capture**: Wizard step or settings screen showing provider registration and routing profile controls
-- **Placement suggestion**: after "Centralized policy and governance"
-- **Caption suggestion**: "Gateway policy controls in one place: routing profile, auth, and registered provider restrictions."

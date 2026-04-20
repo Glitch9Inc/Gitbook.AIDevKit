@@ -14,6 +14,10 @@ Open:
 
 ## Step flow (recommended)
 
+> Screenshot placeholder:
+> Add the full wizard window here with the step list visible.
+> Suggested caption: "Server Gateway Export Wizard flow from template export to smoke test."
+
 ### Step 1 - Export Template
 
 - Click `Export Server`
@@ -53,6 +57,10 @@ Use built-in buttons if needed:
 - Then click `Open /v1/health + /swagger`
 - Verify endpoints open and respond
 
+> Screenshot placeholder:
+> Add the "Run Gateway Locally" step UI here with both action buttons and status checklist.
+> Suggested caption: "Run local bootstrap first, then verify `/v1/health` and `/swagger`."
+
 ### Step 6 - Configure Unity Gateway Settings
 
 - Step auto-applies `LocalTest` routing profile
@@ -68,26 +76,13 @@ Click `Run Automated Smoke Test` and pass all checks:
 - `/swagger` reachable
 - Unity LLM request succeeds
 
+> Screenshot placeholder:
+> Add a passed smoke-test screen here (all checks green).
+> Suggested caption: "Smoke test completed: health, swagger, and Unity LLM request all passed."
+
 ## Common failure points
 
 - `.env` missing or incomplete provider/auth values
 - Docker daemon not running
 - Unity Local Test auth settings mismatch with `.env`
 - Local Test Base URL not matching actual local gateway URL
-
-## Screenshot to add
-
-- **Capture name**: `wizard-overview-stepper`
-- **Where to capture**: entire wizard window with left step list visible
-- **Placement suggestion**: right below "Step flow (recommended)"
-- **Caption suggestion**: "Server Gateway Export Wizard full flow from template export to smoke test."
-
-- **Capture name**: `wizard-local-run-health-swagger`
-- **Where to capture**: `Run Gateway Locally` step showing both action buttons and status checklist
-- **Placement suggestion**: under "Step 5 - Run Gateway Locally"
-- **Caption suggestion**: "Run local bootstrap first, then verify `/v1/health` and `/swagger`."
-
-- **Capture name**: `wizard-smoke-test-pass`
-- **Where to capture**: `Run Automated Smoke Test` step with all checkmarks green
-- **Placement suggestion**: under "Step 7 - Run Automated Smoke Test"
-- **Caption suggestion**: "Smoke test completed: health, swagger, and Unity LLM request all passed."

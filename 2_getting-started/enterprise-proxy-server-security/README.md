@@ -17,7 +17,6 @@ This section explains what the gateway server is, why Enterprise teams use it, a
 1. [What Is The Gateway Server?](what-is-a-proxy-server.md)
 2. [Why Enterprise Teams Use It](why-enterprise-uses-proxy.md)
 3. [Run It With Wizard (Local Test)](run-with-wizard-local-test.md)
-4. [Screenshot Guide (Where To Capture)](screenshot-guide.md)
 
 ## Scope
 
@@ -26,3 +25,5 @@ This guide focuses on the Enterprise server-gateway workflow available in Unity 
 - `Window/AI Dev Kit/Server Gateway (Enterprise)/Server Gateway Export Wizard`
 
 For quick security background, see [API Key Security](../api-key-security/README.md).
+
+Each sub-guide includes inline screenshot placeholders so you can replace them with real captures while authoring.
