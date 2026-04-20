@@ -3,7 +3,7 @@
 ## Introduction
 
 * [AI Dev Kit](README.md)
-* [AI Dev Kit Packages](1_main/package-tiers.md)
+* [Available Packages](1_main/package-tiers.md)
 * [FAQ](1_main/faq.md)
 * [Troubleshooting](1_main/troubleshooting/README.md)
   * [AI Dev Kit does not appear in Tools menu](1_main/troubleshooting/ai-dev-kit-does-not-appear-in-tools-menu.md)
