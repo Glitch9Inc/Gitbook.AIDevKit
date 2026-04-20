@@ -42,7 +42,7 @@
     * [Client-Side Keys](2_getting-started/api-key-security/client-side-keys.md)
     * [How AIDevKit Protects Your Keys](2_getting-started/api-key-security/how-aidevkit-protects-your-keys.md)
     * [Best Practices](2_getting-started/api-key-security/best-practices.md)
-* [Enterprise Proxy Server Security](2_getting-started/enterprise-proxy-server-security/README.md)
+* [Enterprise Proxy Server](2_getting-started/enterprise-proxy-server-security/README.md)
   * [What Is The Gateway Server?](2_getting-started/enterprise-proxy-server-security/what-is-a-proxy-server.md)
   * [Why Enterprise Teams Use It](2_getting-started/enterprise-proxy-server-security/why-enterprise-uses-proxy.md)
   * [Run It With Wizard (Local Test)](2_getting-started/enterprise-proxy-server-security/run-with-wizard-local-test.md)
