@@ -105,3 +105,19 @@ Even though the key is not cached, it does pass through managed memory at the mo
 The goal of `SecureToken` is to eliminate *easy*, *automated*, and *passive* extraction (file dumps, string searches, casual decompilation). It is not designed to stop a skilled, targeted reverse-engineer with full access to the binary.
 
 > **Bottom line:** `SecureToken` is significantly better than storing keys in plain text, but it is not a substitute for a server-side architecture when the key being protected has high monetary or security value.
+
+---
+
+## Enterprise Recommendation: Use a Proxy Server
+
+For Enterprise production deployments, treat `SecureToken` as a client hardening layer, not the final architecture.
+
+The stronger model is:
+
+* Unity client sends requests to your proxy server
+* Proxy server holds upstream provider API keys in server-side secrets
+* Provider keys never ship in client binaries
+
+This eliminates the highest-risk vector in this document: extracting provider keys from distributed client builds.
+
+See [Enterprise Proxy Server Security](../enterprise-proxy-server-security.md).

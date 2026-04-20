@@ -57,6 +57,20 @@ This means `SecureToken` is effective against passive, automated, and casual att
 
 ---
 
+## Enterprise Option: Move Keys to a Proxy Server
+
+If you are shipping an Enterprise production app, the recommended model is to avoid client-side provider keys entirely:
+
+* Keep provider API keys only on your gateway/proxy server
+* Have Unity call your proxy endpoint instead of provider endpoints directly
+* Enforce routing/auth/rate-limit policy on the server side
+
+This removes the main client extraction risk because provider keys are never distributed to end-user devices.
+
+See [Enterprise Proxy Server Security](../enterprise-proxy-server-security.md).
+
+---
+
 ## Reducing Risk Beyond SecureToken
 
 When the key must live in the client, layer these controls on top of `SecureToken`:

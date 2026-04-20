@@ -16,7 +16,21 @@ See [How AIDevKit Protects Your Keys](how-aidevkit-protects-your-keys.md) for a 
 
 ---
 
-## 2. Create Restricted API Keys
+## 2. For Enterprise Production, Put Provider Keys Behind a Proxy
+
+If your deployment target includes real users and paid traffic, the safest pattern is to keep provider keys only on your server:
+
+* Unity clients call your gateway/proxy endpoint
+* The proxy injects provider keys from server-side secrets
+* Routing/auth/rate-limit policy is enforced centrally
+
+This removes provider keys from shipped client binaries and greatly reduces extraction risk.
+
+See [Enterprise Proxy Server Security](../enterprise-proxy-server-security.md).
+
+---
+
+## 3. Create Restricted API Keys
 
 Most providers let you create keys scoped to specific operations. Issue the **minimum set of permissions** your application actually needs:
 
@@ -27,7 +41,7 @@ Check your provider's dashboard for scope/permission settings before distributin
 
 ---
 
-## 3. Set Spending Caps and Rate Limits
+## 4. Set Spending Caps and Rate Limits
 
 Even a stolen, fully functional key does limited damage if you have configured hard usage ceilings:
 
@@ -39,7 +53,7 @@ These controls do not prevent theft, but they dramatically contain the blast rad
 
 ---
 
-## 4. Never Commit Keys to Version Control
+## 5. Never Commit Keys to Version Control
 
 Add your API key configuration files to `.gitignore` before your first commit. A key committed to a public repository is typically found and abused within minutes by automated scanning bots.
 
@@ -54,7 +68,7 @@ For extra safety, use a tool like [git-secrets](https://github.com/awslabs/git-s
 
 ---
 
-## 5. Use a Separate Key Per Environment
+## 6. Use a Separate Key Per Environment
 
 Maintain distinct keys for development, staging, and production:
 
@@ -68,13 +82,13 @@ This way, a leaked development key cannot be used against production, and a prod
 
 ---
 
-## 6. Rotate Keys Regularly
+## 7. Rotate Keys Regularly
 
 Establish a rotation schedule — monthly or quarterly — and immediately rotate any key that may have been exposed (accidental commit, team member departure, suspected breach). Most providers let you generate a replacement key before revoking the old one, giving you a zero-downtime rotation window.
 
 ---
 
-## 7. Monitor Usage for Anomalies
+## 8. Monitor Usage for Anomalies
 
 Set up automated monitoring on your provider dashboard or billing page to detect abnormal patterns:
 
@@ -86,7 +100,7 @@ Early detection limits financial damage and lets you revoke the key before signi
 
 ---
 
-## 8. Do Not Log or Transmit Keys
+## 9. Do Not Log or Transmit Keys
 
 Be careful that keys are never accidentally written to:
 
@@ -100,6 +114,7 @@ When passing keys to HTTP headers, pass them inline rather than storing them in 
 
 ## Summary Checklist
 
+- [ ] For Enterprise production, route requests through your proxy and keep provider keys server-side
 - [ ] Store client-side keys with `SecureToken`, never as plain strings
 - [ ] Create restricted-scope keys for each application
 - [ ] Set spending caps and usage alerts on the provider dashboard
