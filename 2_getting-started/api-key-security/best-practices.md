@@ -1,4 +1,4 @@
----
+﻿---
 description: Actionable steps to minimize the risk of API key exposure in your project
 ---
 
@@ -10,7 +10,7 @@ The following recommendations are ranked roughly from highest to lowest impact. 
 
 ## 1. Always Use `SecureToken` for Client-Side Storage
 
-If a server-side proxy is not possible, never store API keys as plain strings — in source code, in `PlayerPrefs`, or in a plain text asset file. Always use AIDevKit's `SecureToken`, which applies XOR obfuscation, hex encoding, and split-field storage to prevent trivial extraction.
+If a server-side proxy is not possible, never store API keys as plain strings ??in source code, in `PlayerPrefs`, or in a plain text asset file. Always use AIDevKit's `SecureToken`, which applies XOR obfuscation, hex encoding, and split-field storage to prevent trivial extraction.
 
 See [How AIDevKit Protects Your Keys](how-aidevkit-protects-your-keys.md) for a full explanation.
 
@@ -26,7 +26,7 @@ If your deployment target includes real users and paid traffic, the safest patte
 
 This removes provider keys from shipped client binaries and greatly reduces extraction risk.
 
-See [Enterprise Proxy Server Security](../enterprise-proxy-server-security.md).
+See [Enterprise Proxy Server Security](../enterprise-proxy-server-security/README.md).
 
 ---
 
@@ -45,7 +45,7 @@ Check your provider's dashboard for scope/permission settings before distributin
 
 Even a stolen, fully functional key does limited damage if you have configured hard usage ceilings:
 
-* Set a **monthly budget cap** on the provider dashboard — API calls stop once the cap is hit.
+* Set a **monthly budget cap** on the provider dashboard ??API calls stop once the cap is hit.
 * Set a **per-minute or per-day rate limit** where the provider supports it.
 * Enable **email or webhook alerts** for anomalous usage spikes.
 
@@ -84,7 +84,7 @@ This way, a leaked development key cannot be used against production, and a prod
 
 ## 7. Rotate Keys Regularly
 
-Establish a rotation schedule — monthly or quarterly — and immediately rotate any key that may have been exposed (accidental commit, team member departure, suspected breach). Most providers let you generate a replacement key before revoking the old one, giving you a zero-downtime rotation window.
+Establish a rotation schedule ??monthly or quarterly ??and immediately rotate any key that may have been exposed (accidental commit, team member departure, suspected breach). Most providers let you generate a replacement key before revoking the old one, giving you a zero-downtime rotation window.
 
 ---
 
@@ -123,3 +123,4 @@ When passing keys to HTTP headers, pass them inline rather than storing them in 
 - [ ] Rotate keys on a schedule and immediately after any suspected exposure
 - [ ] Monitor usage dashboards for anomalies
 - [ ] Confirm keys are never written to logs or save data
+

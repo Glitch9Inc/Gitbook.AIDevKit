@@ -1,4 +1,4 @@
-# Table of contents
+﻿# Table of contents
 
 ## Introduction
 
@@ -42,7 +42,11 @@
     * [Client-Side Keys](2_getting-started/api-key-security/client-side-keys.md)
     * [How AIDevKit Protects Your Keys](2_getting-started/api-key-security/how-aidevkit-protects-your-keys.md)
     * [Best Practices](2_getting-started/api-key-security/best-practices.md)
-* [Enterprise Proxy Server Security](2_getting-started/enterprise-proxy-server-security.md)
+* [Enterprise Proxy Server Security](2_getting-started/enterprise-proxy-server-security/README.md)
+  * [What Is The Gateway Server?](2_getting-started/enterprise-proxy-server-security/what-is-a-proxy-server.md)
+  * [Why Enterprise Teams Use It](2_getting-started/enterprise-proxy-server-security/why-enterprise-uses-proxy.md)
+  * [Run It With Wizard (Local Test)](2_getting-started/enterprise-proxy-server-security/run-with-wizard-local-test.md)
+  * [Screenshot Guide (Where To Capture)](2_getting-started/enterprise-proxy-server-security/screenshot-guide.md)
 * [Local Offline AI Setup](2_getting-started/local-offline-ai-servers/README.md)
   * [Self-Hosting with Ollama](2_getting-started/self-hosting-with-ollama.md)
   * [Self-Hosting with LM Studio](2_getting-started/local-offline-ai-servers/self-hosting-with-lm-studio.md)
@@ -185,3 +189,5 @@
 * [Generation Hubs](6_playgrounds/generation-hubs/README.md)
 * [Generation History](6_editor-tools/generation-history/README.md)
 * [Data Manager](6_editor-tools/data-manager/README.md)
+
+

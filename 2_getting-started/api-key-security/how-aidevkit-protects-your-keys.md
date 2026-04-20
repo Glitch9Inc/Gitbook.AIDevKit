@@ -1,5 +1,5 @@
----
-description: A deep dive into SecureToken — the XOR-based obfuscation system that keeps your keys out of plain sight
+﻿---
+description: A deep dive into SecureToken ??the XOR-based obfuscation system that keeps your keys out of plain sight
 ---
 
 # How AIDevKit Protects Your Keys
@@ -12,15 +12,15 @@ AIDevKit stores API keys through the `SecureToken` class, which applies a multi-
 
 When you enter an API key in the AIDevKit settings window, the key is processed through the following steps before being serialized into a Unity ScriptableObject:
 
-### Step 1 — XOR Cipher
+### Step 1 ??XOR Cipher
 
 The raw key is XOR'd character-by-character against a secret mask:
 
 ```
 Original key:  "sk-1234567890abcdef"
 XOR mask:      "s3cr3t"  (cycled to match the key length)
-──────────────────────────────────────
-Cipher:        [binary data — unreadable]
+??????????????????????????????????????
+Cipher:        [binary data ??unreadable]
 ```
 
 XOR is symmetric: applying the same mask a second time recovers the original key. This is the same operation used for both encryption and decryption.
@@ -34,9 +34,9 @@ private const string M_PART_B = "r3t";
 public static string GetMask() => M_PART_A + M_PART_B;
 ```
 
-Splitting the mask across two constants means a simple string search for `s3cr3t` inside the compiled binary will fail — the attacker must locate and join both halves.
+Splitting the mask across two constants means a simple string search for `s3cr3t` inside the compiled binary will fail ??the attacker must locate and join both halves.
 
-### Step 2 — Hex Encoding
+### Step 2 ??Hex Encoding
 
 The raw binary cipher is converted to a printable hexadecimal string:
 
@@ -47,13 +47,13 @@ Hex string:       "1A0F324B012C6E..."
 
 This makes the encrypted key safe to store as a plain text serialized field without encoding issues.
 
-### Step 3 — Split Storage
+### Step 3 ??Split Storage
 
 The hex string is cut exactly in half and stored as **two separate serialized fields** in the ScriptableObject, named `ambientFactor` and `reflectionIndex`:
 
 ```
 Hex string:       "1A0F32 | 4B012C6E"
-                     ↓           ↓
+                     ??          ??
 ambientFactor:   "1A0F32"     (stored in asset file)
 reflectionIndex: "4B012C6E"   (stored in asset file)
 ```
@@ -65,9 +65,9 @@ No single field in the asset file contains the complete encrypted token. An atta
 Decryption happens automatically on demand and is never cached in memory:
 
 ```
-ambientFactor + reflectionIndex  →  rejoin
-     ↓
-FromHex  →  XOR with mask  →  Original API key ✅
+ambientFactor + reflectionIndex  ?? rejoin
+     ??
+FromHex  ?? XOR with mask  ?? Original API key ??
 ```
 
 The key is passed **directly** to the HTTP request header without storing it in a local variable, so it exists in managed memory for the shortest possible time.
@@ -84,7 +84,7 @@ The key is passed **directly** to the HTTP request header without storing it in 
 | **Mask split into two constants** | A single-string search in the compiled binary will not find the mask |
 | **No in-memory caching** | Memory snapshots taken outside the brief decryption window will not contain the plaintext key |
 
-Casual reverse-engineering — the most common threat for distributed games and tools — is substantially harder because there is no single place where the key can be found by pattern matching.
+Casual reverse-engineering ??the most common threat for distributed games and tools ??is substantially harder because there is no single place where the key can be found by pattern matching.
 
 ---
 
@@ -120,4 +120,5 @@ The stronger model is:
 
 This eliminates the highest-risk vector in this document: extracting provider keys from distributed client builds.
 
-See [Enterprise Proxy Server Security](../enterprise-proxy-server-security.md).
+See [Enterprise Proxy Server Security](../enterprise-proxy-server-security/README.md).
+
