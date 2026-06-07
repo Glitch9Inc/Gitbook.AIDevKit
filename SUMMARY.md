@@ -11,6 +11,7 @@
   * [The type or namespace name 'Newtonsoft' could not be found](1_main/troubleshooting/the-type-or-namespace-name-newtonsoft-could-not-be-found.md)
   * [The type or namespace name 'UniTask<>' could not be found](1_main/troubleshooting/the-type-or-namespace-name-unitask-less-than-greater-than-could-not-be-found.md)
   * [Getting Complier Errors after AI Dev Kit update](1_main/troubleshooting/getting-complier-errors-after-ai-dev-kit-update.md)
+  * [Windows Security blocks or quarantines AI Dev Kit files](1_main/troubleshooting/windows-security-threat-blocked-or-quarantined-files.md)
   * [Model 'gpt-4o (or other model name)' not found](1_main/troubleshooting/model-gpt-4o-or-other-model-name-not-found.md)
   * [HTTP/1.1 400 Bad Request](1_main/troubleshooting/http-1.1-400-bad-request.md)
   * [Timeout Issues](1_main/troubleshooting/timeout-issues.md)
