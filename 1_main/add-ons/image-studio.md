@@ -12,7 +12,8 @@ straight back into your project folder.
 Use it for character concepts, item icons, UI graphics, backgrounds, sprites, transparent cutout
 assets, prototype textures, and placeholder art.
 
-> Built on the free AI DevKit base package.
+> Built on the AI DevKit core — which is **bundled with the package**, so no separate AI DevKit
+> install is required.
 
 ## Extra providers
 
@@ -72,8 +73,10 @@ Image Studio adds **11 request classes** on top of the base package's `ImageGene
 
 ## Requirements
 
-* AI DevKit base package (Lite or higher)
 * Unity 6 (6000.x)
+* An AI provider + API key
+
+The **AI DevKit core is bundled** with AI Image Studio — no separate AI DevKit install required.
 
 ## Links
 

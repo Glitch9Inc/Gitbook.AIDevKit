@@ -39,7 +39,9 @@ package.
 
 ## How add-ons work
 
-* **Built on the base package.** Add-ons require AI DevKit (Lite or higher) to be installed first.
+* **Built on the AI DevKit core.** Add-ons use the same Unified API, API keys, and model library.
+  Some (such as AI Image Studio) **bundle the AI DevKit core**, so no separate AI DevKit install is
+  required.
 * **Same Unified API.** New request types (e.g. `GENUpscale`, `GENOutpaint`) plug into the same
   fluent `SetModel(...).ExecuteAsync()` pattern as the base package.
 * **Extra providers when relevant.** Some add-ons register additional provider families (for
