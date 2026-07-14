@@ -21,7 +21,7 @@ Voice input enables your agent to understand spoken language:
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 
 public class VoiceInput : MonoBehaviour
 {

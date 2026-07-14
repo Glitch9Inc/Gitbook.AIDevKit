@@ -360,7 +360,7 @@ For specialized use cases, you can create custom Persona classes by inheriting f
 ### Step 1: Create the Class
 
 ```csharp
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 using UnityEngine;
 
 namespace YourNamespace

@@ -7,7 +7,7 @@ You can enable code execution on the model, as shown here:
 {% tabs %}
 {% tab title="C#" %}
 ```javascript
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 var model = new GenerativeModel(
     GeminiModel.Gemini15Pro, 
@@ -126,7 +126,7 @@ Alternatively, you can enable code execution on the call to `generate_content`:
 {% tabs %}
 {% tab title="C#" %}
 ```javascript
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 GenerativeModel model = new(
     GeminiModel.Gemini15Pro);
@@ -166,7 +166,7 @@ You can also use code execution as part of a chat.
 {% tabs %}
 {% tab title="C#" %}
 ```javascript
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 var model = new GenerativeModel(GeminiModel.Gemini15Pro);
 

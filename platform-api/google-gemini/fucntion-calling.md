@@ -378,7 +378,7 @@ First peek inside the model's `JsonSchema` attribute, you can see how it describ
 {% tabs %}
 {% tab title="C#" %}
 <pre class="language-csharp"><code class="lang-csharp">using Cysharp.Threading.Tasks;
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 using UnityEngine;
 <strong>
 </strong>// Define the schema for the function arguments.

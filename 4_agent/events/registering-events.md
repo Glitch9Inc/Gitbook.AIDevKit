@@ -12,7 +12,7 @@ Learn how to subscribe to agent events and manage event subscriptions properly.
 Use `RegisterEvent<T>()` to subscribe to a specific event type:
 
 ```csharp
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 
 Agent agent = new Agent(config, settings);
 
@@ -143,7 +143,7 @@ agent.RegisterEvent<ConversationCreated>(async evt =>
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 using System.Collections.Generic;
 
 public class AgentEventHandler : MonoBehaviour
@@ -201,7 +201,7 @@ public class AgentEventHandler : MonoBehaviour
 ### Class-based Lifecycle
 
 ```csharp
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 using System;
 using System.Collections.Generic;
 
@@ -382,8 +382,8 @@ agent.UnregisterEvent<AgentStatusChanged>(/* ❌ Can't reference the lambda */);
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
-using Glitch9.AIDevKit.Agents.Conversations;
+using Glitch9.AI.Agents;
+using Glitch9.AI.Agents.Conversations;
 using Glitch9.IO;
 using System;
 using System.Collections.Generic;

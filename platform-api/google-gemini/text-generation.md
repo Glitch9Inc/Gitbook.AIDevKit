@@ -7,7 +7,7 @@ The simplest way to generate text using the Gemini API is to provide the model w
 {% tabs %}
 {% tab title="C#" %}
 ```csharp
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 // Choose a model that's appropriate for your use case.
 var model = new GenerativeModel(GeminiModel.Gemini15Flash);
@@ -48,7 +48,7 @@ The Gemini API supports multimodal inputs that combine text with media files. Th
 {% tabs %}
 {% tab title="C#" %}
 ```csharp
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 // Choose a model that's appropriate for your use case.
 var model = new GenerativeModel(GeminiModel.Gemini15Flash);
@@ -85,7 +85,7 @@ The following example shows how to implement streaming using the [`streamGenerat
 {% tabs %}
 {% tab title="C#" %}
 ```csharp
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 // Choose a model that's appropriate for your use case.
 var model = new GenerativeModel(GeminiModel.Gemini15Flash);

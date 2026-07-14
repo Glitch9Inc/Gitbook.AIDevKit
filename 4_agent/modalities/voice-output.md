@@ -21,7 +21,7 @@ Voice output enables your agent to speak responses:
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 
 public class VoiceOutput : MonoBehaviour
 {

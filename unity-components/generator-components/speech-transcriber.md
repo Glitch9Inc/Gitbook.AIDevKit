@@ -50,7 +50,7 @@ AI Dev Kit / AI Generators / Transcriber
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 

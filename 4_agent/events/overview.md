@@ -210,8 +210,8 @@ General agent metadata:
 ## Example: Event Monitoring System
 
 ```csharp
-using Glitch9.AIDevKit.Agents;
-using Glitch9.AIDevKit.Agents.Conversations;
+using Glitch9.AI.Agents;
+using Glitch9.AI.Agents.Conversations;
 using Glitch9.IO;
 using System;
 using System.Collections.Generic;

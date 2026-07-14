@@ -5,7 +5,7 @@ The following code snippet shows how to set safety settings in your `GenerateCon
 {% tabs %}
 {% tab title="C#" %}
 ```csharp
-using Glitch9.AIDevKit.Google.GenerativeAI;
+using Glitch9.AI.Google.GenerativeAI;
 
 var model = new GenerativeModel(GeminiModel.Gemini15Flash);
 

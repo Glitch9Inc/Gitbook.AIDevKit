@@ -43,7 +43,7 @@ AI Dev Kit / AI Generators / Embedding Generator
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using UnityEngine;
 
 public class EmbeddingExample : MonoBehaviour
@@ -73,6 +73,6 @@ public class EmbeddingExample : MonoBehaviour
 
 ## Related Topics
 
-* [Text Embedding](../../c-codes/gentasks-unified-api/embedding/text-embedding.md)
-* [Batch Embedding](../../c-codes/gentasks-unified-api/embedding/batch-embedding.md)
-* [Vector Store Overview](../../c-codes/agent-advanced-chatbot/memory/rag-overview.md)
+* [Text Embedding](../../csharp-scripting/gentasks-unified-api/embedding/text-embedding.md)
+* [Batch Embedding](../../csharp-scripting/gentasks-unified-api/embedding/batch-embedding.md)
+* [Vector Store Overview](../../csharp-scripting/agent-advanced-chatbot/memory/rag-overview.md)

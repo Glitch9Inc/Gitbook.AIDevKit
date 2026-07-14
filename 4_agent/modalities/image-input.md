@@ -21,7 +21,7 @@ Vision allows your agent to analyze and understand visual content:
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 
 public class VisionExample : MonoBehaviour
 {

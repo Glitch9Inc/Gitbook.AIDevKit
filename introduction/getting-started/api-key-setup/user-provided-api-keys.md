@@ -20,7 +20,7 @@ When `CurrentUser` is set, AIDevKit can:
 Use your existing user model (or a wrapper) and implement `IUserProfile`.
 
 ```csharp
-using Glitch9.AIDevKit;
+using Glitch9.AI;
 using System.Collections.Generic;
 
 public class AppUser : IUserProfile

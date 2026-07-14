@@ -20,10 +20,10 @@ Enables voice input functionality using microphone capture.
 
 * Records audio using the microphone.
 * Converts speech to text asynchronously.
-* Returns a [`Transcript`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.Transcript.html) object.
+* Returns a [`Transcript`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.Transcript.html) object.
 
 **Typical usage**\
-Call `StartRecording()`, speak, then call `StopRecording()` to get the [`Transcript`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.Transcript.html).
+Call `StartRecording()`, speak, then call `StopRecording()` to get the [`Transcript`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.Transcript.html).
 
 ```csharp
 stt.StartRecording();
@@ -41,7 +41,7 @@ Provides voice output via TTS generation.
 
 **What it does**
 
-* Converts a string response into [`GeneratedAudio`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.GeneratedAudio.html) (`AudioClip`).
+* Converts a string response into [`GeneratedAudio`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.GeneratedAudio.html) (`AudioClip`).
 * Can play automatically if `AudioSource` is attached.
 
 **Use with**\
@@ -83,7 +83,7 @@ Generates images from natural language prompts.
 * Customizable: resolution, style, aspect ratio, quality.
 
 **Output**\
-Returns a [`GeneratedImage`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.GeneratedImage.html) containing a `Texture2D`.
+Returns a [`GeneratedImage`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.GeneratedImage.html) containing a `Texture2D`.
 
 ```csharp
 var image = await imageGenerator.GenerateImageAsync("A futuristic city at night");
@@ -104,7 +104,7 @@ Registers C# methods as callable functions through Function Calling.
 
 **How to Use**
 
-1. Add [`FunctionManager`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.Components.FunctionManager.html) to a GameObject.
+1. Add [`FunctionManager`](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.Components.FunctionManager.html) to a GameObject.
 2. Assign a script with public void methods.
 3. Select a method in the Inspector.
 4. Optionally describe parameters for the AI.

@@ -45,7 +45,7 @@ At least one `SafetySetting` must be configured, or generation will throw a `Mal
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 

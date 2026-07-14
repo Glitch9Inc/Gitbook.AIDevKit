@@ -51,7 +51,7 @@ AI Dev Kit / AI Generators / Audio Isolation
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using UnityEngine;
 
 public class AudioIsolationExample : MonoBehaviour
@@ -97,6 +97,6 @@ public class AudioIsolationExample : MonoBehaviour
 
 ## Related Topics
 
-* [Audio Isolation](../../c-codes/gentasks-unified-api/audio/audio-isolation.md)
-* [Speech to Text](../../c-codes/gentasks-unified-api/audio/speech-to-text/)
-* [Voice Change](../../c-codes/gentasks-unified-api/audio/voice-change.md)
+* [Audio Isolation](../../csharp-scripting/gentasks-unified-api/audio/audio-isolation.md)
+* [Speech to Text](../../csharp-scripting/gentasks-unified-api/audio/speech-to-text/)
+* [Voice Change](../../csharp-scripting/gentasks-unified-api/audio/voice-change.md)

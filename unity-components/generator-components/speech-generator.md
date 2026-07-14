@@ -42,7 +42,7 @@ When a `TextToSpeechPlayer` is assigned, audio is streamed to the player chunk b
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using UnityEngine;
 
 public class TTSExample : MonoBehaviour

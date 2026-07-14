@@ -43,7 +43,7 @@ AI Dev Kit / AI Generators / Video Generator
 ## Code Example
 
 ```csharp
-using Glitch9.AIDevKit.Generators;
+using Glitch9.AI.Generators;
 using UnityEngine;
 
 public class VideoGenExample : MonoBehaviour
@@ -65,5 +65,5 @@ public class VideoGenExample : MonoBehaviour
 
 ## Related Topics
 
-* [Text to Video](../../c-codes/gentasks-unified-api/video/text-to-video.md)
-* [Image to Video](../../c-codes/gentasks-unified-api/video/image-to-video.md)
+* [Text to Video](../../csharp-scripting/gentasks-unified-api/video/text-to-video.md)
+* [Image to Video](../../csharp-scripting/gentasks-unified-api/video/image-to-video.md)

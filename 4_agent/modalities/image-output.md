@@ -21,7 +21,7 @@ AI Dev Kit agents can generate images from text prompts:
 
 ```csharp
 using UnityEngine;
-using Glitch9.AIDevKit.Agents;
+using Glitch9.AI.Agents;
 
 public class ImageGeneration : MonoBehaviour
 {

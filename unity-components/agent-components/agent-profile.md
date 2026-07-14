@@ -349,4 +349,4 @@ AssetDatabase.SaveAssets();
 * [Agent Persona](agent-persona.md) - Define agent personality and instructions
 * [Agent Behaviour](agent-behaviour.md) - Attach profile to scene GameObject
 * [Tool Managers](https://github.com/Glitch9Inc/Gitbook.AIDevKit/blob/main/4_agent/components/tool-managers.md) - Enable function calling capabilities
-* [Creating Your First Agent](../../c-codes/agent-advanced-chatbot/overview/creating-your-first-agent.md) - Complete setup guide
+* [Creating Your First Agent](../../csharp-scripting/agent-advanced-chatbot/overview/creating-your-first-agent.md) - Complete setup guide

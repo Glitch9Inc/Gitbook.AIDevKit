@@ -5,7 +5,7 @@ description: AI Dev Kit API Reference Documentation
 # API Reference
 
 <div style="width: 100%; height: 100vh; border: none;">
-  <iframe src="https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.html"
+  <iframe src="https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.html"
           style="width: 100%; height: 100%; border: none;"
           frameborder="0"
           allow="clipboard-read; clipboard-write">
@@ -14,4 +14,4 @@ description: AI Dev Kit API Reference Documentation
 
 ---
 
-**Note**: This page displays the external API documentation. For the best experience, you can also [open it in a new tab](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AIDevKit.html).
+**Note**: This page displays the external API documentation. For the best experience, you can also [open it in a new tab](https://glitch9inc.github.io/DocFx.AIDevKit/api/Glitch9.AI.html).
