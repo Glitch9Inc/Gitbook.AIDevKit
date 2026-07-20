@@ -4,6 +4,10 @@
 
 * [AI DevKit](README.md)
   * [Packages](introduction/readme/package-tiers.md)
+  * [Add-ons](introduction/readme/add-ons/README.md)
+    * [AI Sheets](introduction/readme/add-ons/ai-sheets.md)
+    * [AI Image Studio](introduction/readme/add-ons/image-studio.md)
+    * [AI Pixel Studio](introduction/readme/add-ons/pixel-studio.md)
 * [Getting Started](introduction/getting-started/README.md)
   * [API Key Setup](introduction/getting-started/api-key-setup/README.md)
     * [How to Get API Keys](introduction/getting-started/api-key-setup/how-to-get-api-keys/README.md)
@@ -168,13 +172,6 @@
 * [Generation Hubs](6_playgrounds/generation-hubs/README.md)
 * [Generation History](6_editor-tools/generation-history/README.md)
 * [Data Manager](6_editor-tools/data-manager/README.md)
-
-## Add-ons
-
-* [Add-ons](1_main/add-ons/README.md)
-  * [AI Sheets](1_main/add-ons/ai-sheets.md)
-  * [AI Image Studio](1_main/add-ons/image-studio.md)
-  * [AI Pixel Studio](1_main/add-ons/pixel-studio.md)
 
 ## Support
 
